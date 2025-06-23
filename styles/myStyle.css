@@ -1,0 +1,630 @@
+﻿@font-face {
+    font-family: "YehudaCLM";
+    src: url("/fonts/yehudaclm-light-webfont.woff") format("woff"),
+    url("/fonts/yehudaclm-light-webfont.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "YehudaCLM";
+    src: url("../fonts/yehudaclm-bold-webfont.woff") format("woff"),
+    url("../fonts/yehudaclm-bold-webfont.ttf") format("truetype");
+    font-weight: bold;
+}
+
+* {
+    
+}
+
+*:focus{
+    outline: rebeccapurple 2px solid;
+}
+
+body {
+    direction: rtl;
+}
+
+body input:focus{
+
+}
+
+body #container {
+    display: block;
+    background-color:whitesmoke;
+}
+
+body div header{
+    text-align: center;
+    max-height: 100px;
+    background-color: goldenrod;
+    font-family: "YehudaCLM", sans-serif;
+}
+
+body div header #bsd{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    color: black;
+    z-index: 10;
+    text-align: right;
+    font-size: 14px;
+}
+
+body div header #navLogo{
+    position: absolute;
+    bottom: 88.9%;
+    right: 11.5%;
+    color: black;
+    z-index: 15;
+    transition: 0.5s ease;
+}
+
+body div header #navLogo:hover{
+    transform: rotate(4deg);
+    filter: brightness(106%) saturate(109%);
+    transition:0.5s ease;
+}
+
+body div header #navLogo:active{
+    scale: 0.96;
+}
+
+body div header nav {
+    position: relative;
+}
+
+body div header #mainNav {
+    
+}
+
+body div header #secondNav {
+    background-color: silver;
+}
+
+body div header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 10;
+}
+
+body div header nav ul li {
+    width: 200px;
+    height: 40px;
+}
+
+body div header nav > ul > li{
+    display: inline-block;
+}
+
+body div header nav ul li a{
+    background-color: whitesmoke;
+    color: darkgoldenrod;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    float: right;
+    font-size:18px;
+}
+
+body div header nav > ul > li > a{
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 20px;
+    outline: 4px solid whitesmoke;
+}
+
+
+body div header nav > ul > li:hover > a{
+    background-color: whitesmoke;
+    color: goldenrod;
+    outline: 4px solid whitesmoke;
+}
+
+
+body div header nav > ul > li > #activePageHeader{
+    font-weight: bold;
+    font-size:22px;
+    border-bottom: 3px solid goldenrod;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+body div header nav ul li ul{
+    display:none;
+    padding-top: 63px;
+    width:200px;
+    position: absolute;
+}
+
+
+body div header nav ul li:hover ul{
+    display:block;
+}
+
+body div header nav ul li ul li{
+    border-bottom: 21px solid silver;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+body div header nav ul li ul li:last-child{
+    border-bottom: none;
+}
+
+body div header nav ul li ul li a {
+    padding-top: 10px;
+    outline: 4px solid whitesmoke;
+}
+
+
+body div header nav ul li ul .nav1Titles{
+    transition: scale 0.1s ease-out;
+    cursor: pointer;
+}
+
+body div header nav ul li ul .nav1Titles:hover  {
+    color: goldenrod;
+    outline: 6px solid whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 4px solid silver;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+body div header nav ul li ul .nav1Titles:active{
+    scale: 98%;
+}
+
+body div header nav ul li ul .nav2Titles{
+    cursor: not-allowed;
+}
+
+body div header nav ul li ul .nav2Titles:hover{
+    color:darkgoldenrod;
+    outline: 4px solid whitesmoke;
+}
+
+
+
+body div header nav ol{
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    position: relative;
+    right: 22.95%;
+    max-width: 52%;
+}
+
+body div header nav ol li{
+   display: inline-block;
+}
+
+body div header nav ol li a{
+    z-index: 5;
+    text-decoration: none;
+    color: black;
+}
+
+body div header nav ol li:last-child a{
+    color: dimgray;
+    text-decoration: unset;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+body div header nav ol li:after{
+    content: " >";
+}
+
+body div header nav ol li:last-child:after{
+    content: "";
+}
+
+body div #oldCityImage{
+    margin-top: 10%;
+    position: absolute;
+    left: 125%;
+    width: 50%;
+    border-radius: 30px;
+    transition: transform 0.5s ease;
+}
+
+body div #oldCityImage:hover {
+    transform: scale(1.05);
+}
+
+body div #israelMuseumImage{
+    margin-top: 50%;
+    position: absolute;
+    left: 125%;
+    width: 50%;
+    border-radius: 30px;
+    transition: transform 0.5s ease;
+}
+
+body div #israelMuseumImage:hover {
+    transform: scale(1.05);
+}
+
+body div main{
+    font-family: Tahoma, sans-serif;
+    padding-top: 10px;
+    position: relative;
+    padding-bottom: 2%;
+}
+
+body div main h1{
+    font-size: 45px;
+    font-weight: bold;
+    color: gray;
+    text-align: center;
+}
+
+body div main h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: gray;
+    text-align: center;
+
+}
+
+body div main h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    color: black;
+}
+
+body div main ul li{
+    list-style: none;
+}
+
+body div main ul li:before{
+    content: "○ ";
+    color: gray;
+}
+
+body div main p{
+    
+}
+
+body div main #sitemapTitle{
+    
+}
+
+body div #sitemapMain {
+    position: relative;
+    text-align: center;
+}
+
+body div #sitemapMain div {
+    text-align: justify;
+    margin: 3.7% 1.02% 7.4% 1.02%;
+    vertical-align: top;
+    display: inline-block;
+    width: 8.5%;
+}
+
+body div main div .smTitles{
+    height: 30px;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+body div main div .sm1Titles, .sm2Titles{
+    width: fit-content;
+    margin-top:18%;
+    margin-bottom: 18%;
+    text-decoration: none;
+    display: block;
+    color: darkgoldenrod;
+}
+
+body div main div .sm1Titles:hover{
+    color: goldenrod;
+    font-weight: bold;
+}
+
+body div main div .sm2Titles{
+    cursor: not-allowed;
+}
+
+body div main strong{
+    color: darkgoldenrod;
+}
+
+body div main aside #israelMuseumSite{
+    position: relative;
+    right: 55%;
+    color: darkgoldenrod;
+}
+
+body div main #contactUsTitle{
+    color: darkgoldenrod;
+}
+
+body div main #requiredField{
+    position: relative;
+    text-align: right;
+    top: 25px;
+    right: 23.5%;
+    font-size: 14px;
+}
+
+body div main #requiredField::before{
+    content: "* ";
+    color: orangered;
+}
+
+body div main #contactUsForm{
+    position: relative;
+    display: block;
+    text-align: right;
+    top: 50px;
+    right: 23.5%;
+    width: 51.5%;
+}
+
+body div main #contactUsForm[title]{
+    color: darkgoldenrod;
+}
+
+
+body div main #contactUsForm > label > span{
+    font-weight: bold;
+}
+
+body div main #contactUsForm > label > span::before{
+    content: "* ";
+    color: orangered;
+}
+
+body div main #contactUsForm input{
+    height: 25px;
+    border-inline-start: gray solid 3px;
+    border-inline-end: silver solid 3px;
+    border-block-start: darkgoldenrod solid 3px;
+    border-block-end: goldenrod solid 3px;
+}
+
+
+body div main #contactUsForm input:focus{
+    color: black;
+    border: 3px solid dimgray;
+    outline: 1px solid dimgray;
+}
+
+body div main #contactUsForm input::placeholder{
+    font-size: 12px;
+    
+}
+
+body div main #contactUsForm textarea{
+    border-inline-start: gray solid 4px;
+    border-inline-end: silver solid 4px;
+    border-block-start: darkgoldenrod solid 4px;
+    border-block-end: goldenrod solid 4px;
+    width: 400px;
+    height: 100px;
+}
+
+body div main #contactUsForm textarea:focus{
+    color: black;
+    border: 4px solid dimgray;
+    outline: 1px solid dimgray;
+}
+
+body div main #contactUsForm textarea::placeholder{
+    font-size: 14px;
+}
+
+body div main #contactUsForm #email{
+    text-align: left;
+    direction: ltr;
+}
+
+body div main #contactUsForm #email::placeholder{
+    text-align: right;
+    direction: rtl;
+}
+
+body div main #contactUsForm #phone{
+    text-align: left;
+    direction: ltr;
+}
+
+body div main #contactUsForm #phone::placeholder{
+    text-align: right;
+    direction: rtl;
+}
+
+body div main #contactUsForm > label > #launch{
+    font-size: 20px;
+    color: darkgoldenrod;
+    text-align: center;
+    direction: rtl;
+    width: 6.4%;
+    height: 45px;
+    transition: scale 0.1s ease-in;
+}
+
+
+body div main #contactUsForm > label > #launch:hover{
+    font-size: 22px;
+    font-weight: bold;
+    color: goldenrod;
+}
+
+body div main #contactUsForm > label > #launch:active{
+    scale:0.94;
+    transition: scale 0.1s ease-out;
+}
+
+body div #aboutMain div{
+    position: relative;
+    display: block;
+    width: 32%;
+    right: 23.6%;
+    margin-bottom: 0;
+}
+
+body div #aboutTitle{
+        color: black;
+}
+
+body div #aboutMain div article h2{
+    text-align: right;
+    color: darkgoldenrod;
+}
+
+body div #aboutMain div article h3{
+    margin-bottom: 0;
+    text-align: center;
+    color: dimgray;
+}
+
+body div #aboutMain div article strong{
+    color: dimgray;
+}
+
+body div #aboutMain div article p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body div #aboutMain div article a{
+    font-size: 18px;
+    display: block;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+body div #aboutMain div article .aboutSiteLinks{
+    color: darkgoldenrod;
+    text-decoration: none;
+    width: fit-content;
+}
+
+body div #aboutMain div article .aboutSiteLinks:before {
+    content: "○ ";
+    color: gray;
+}
+body div #aboutMain div article .aboutSiteLinks:hover{
+    color: goldenrod;
+    font-weight: bold;
+}
+
+body div aside #aboutHitLogoContainer{
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+}
+
+body div aside #aboutHitLogoContainer a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+body div aside #aboutHitLogoContainer img {
+    display: block;
+    scale: 100%;
+    transition: scale 0.5s ease-out;
+
+}
+
+body div aside #aboutHitLogoContainer img:hover{
+    scale: 108%;
+    transition: scale 0.5s ease-in;
+}
+
+
+body div aside #aboutHitLogoContainer #instructionalTechnologiesFacultyLink {
+    color: darkmagenta;
+    font-weight: bold;
+    font-size: 45px;
+    text-decoration: none;
+    display: inline-block;
+    transition: scale 0.15s ease-in-out;
+}
+
+body div aside #aboutHitLogoContainer #instructionalTechnologiesFacultyLink:hover {
+    color: magenta;
+    scale: 104%;
+    transition: color 0.15s ease-in-out;
+}
+
+body div main #filterForm{
+    position: relative;
+    display: block;
+    text-align: right;
+    top: 50px;
+    right: 23.5%;
+    width: 51.5%;
+}
+
+
+body div footer{
+    position: relative;
+    text-align: center;
+    background-color: lightgray;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: "YehudaCLM", sans-serif;
+}
+
+body div footer div{
+    width: 9%;
+    position: relative;
+    display: inline-block;
+}
+
+body div footer #footerDiv1{
+    left: 1%;
+}
+
+body div footer #footerDiv2{
+}
+
+body div footer #footerDiv3{
+    right: 2.3%
+}
+
+body div footer div p{
+    height: 24px;
+    position: relative;
+    text-decoration: underline;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body div footer div a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: dimgray;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+body div footer div #activePageFooter {
+    font-weight: bold;
+    text-decoration: underline dimgray 2px solid;
+}
+
+body div footer div .footer1Titles:hover{
+    color: gray;
+    font-weight: bold;
+}
+
+body div footer #footerAllRightsReserved{
+    position: absolute;
+    right: 2%;
+    top: 79%;
+}
