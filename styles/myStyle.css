@@ -417,6 +417,7 @@ body div main #contactUsForm input::placeholder{
 }
 
 body div main #contactUsForm #subscribe{
+    outline: none;
     position: relative;
     scale: 1.5; 
     top: 5px;
