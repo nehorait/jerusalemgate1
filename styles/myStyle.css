@@ -392,17 +392,17 @@ body div main #contactUsForm > label > .notRequired::before{
     padding-right: 3.8%;
 }
 
-body div main #contactUsForm input, select{
+body div main #contactUsForm input[type=text],input[type=tel],input[type=email], select, input[type=submit]{
     border-inline-start: gray solid 3px;
     border-inline-end: silver solid 3px;
     border-block-start: darkgoldenrod solid 3px;
     border-block-end: goldenrod solid 3px;
 }
 
-body div main #contactUsForm input{
+body div main #contactUsForm input[type=text], input[type=tel],input[type=email]{
     height: 25px;
 }
-body div main #contactUsForm input::placeholder{
+body div main #contactUsForm input[type="text"]::placeholder,input[type="tel"]::placeholder,input[type="email"]::placeholder{
     font-size: 12px;
 }
 
@@ -421,7 +421,7 @@ body div main #contactUsForm select > option:first-child{
     color: black;
 }
 
-body div main #contactUsForm input:focus, select:focus{
+body div main #contactUsForm input[type="text"]:focus,input[type="tel"]:focus,input[type="email"]:focus, select:focus, input[type=submit]:focus{
     color: black;
     border: 3px solid dimgray;
     outline: 1px solid dimgray;
@@ -447,41 +447,18 @@ body div main #contactUsForm textarea::placeholder{
     font-size: 14px;
 }
 
-body div main #contactUsForm #email{
+body div main #contactUsForm #phone, #email{
     text-align: left;
     direction: ltr;
 }
 
-body div main #contactUsForm #email::placeholder{
+body div main #contactUsForm #phone::placeholder, #email::placeholder{
     text-align: right;
     direction: rtl;
-}
-
-body div main #contactUsForm #phone{
-    text-align: left;
-    direction: ltr;
-}
-
-body div main #contactUsForm #phone::placeholder{
-    text-align: right;
-    direction: rtl;
-}
-
-body div main #contactUsForm > label > #launch{
-    font-size: 20px;
-    color: darkgoldenrod;
-    text-align: center;
-    direction: rtl;
-    width: 6.4%;
-    height: 45px;
-    transition: scale 0.1s ease-in;
 }
 
 body div main #contactUsForm #subscribe{
-    outline: none;
-    position: relative;
     scale: 1.5;
-    top: 5px;
     transform: rotate(0deg);
     transition: scale 0.1s linear, transform 0.1s linear;
 }
@@ -493,6 +470,15 @@ body div main #contactUsForm #subscribe:checked{
     transition: scale 0.2s linear, transform 0.2s linear;
 }
 
+body div main #contactUsForm > label > #launch{
+    font-size: 20px;
+    color: darkgoldenrod;
+    text-align: center;
+    direction: rtl;
+    width: 6.4%;
+    height: 45px;
+    transition: scale 0.1s ease-in;
+}
 
 body div main #contactUsForm > label > #launch:hover{
     font-size: 22px;
@@ -584,7 +570,7 @@ body div aside #aboutHitLogoContainer img:hover{
 
 
 body div aside #aboutHitLogoContainer #instructionalTechnologiesFacultyLink {
-    color: darkmagenta;
+    color: rebeccapurple;
     font-weight: bold;
     font-size: 45px;
     text-decoration: none;
@@ -593,7 +579,7 @@ body div aside #aboutHitLogoContainer #instructionalTechnologiesFacultyLink {
 }
 
 body div aside #aboutHitLogoContainer #instructionalTechnologiesFacultyLink:hover {
-    color: magenta;
+    color: mediumpurple;
     scale: 104%;
     transition: color 0.15s ease-in-out;
 }
@@ -607,7 +593,38 @@ body div main #filterForm{
     width: 51.5%;
 }
 
-body div main #filterForm > fieldset input[type="checkbox"]:checked{
+body div main #filterForm > fieldset{
+    width: 33%;
+}
+
+
+body div main #filterForm > fieldset > label > input[type="radio"]{
+    margin-right: 2%;
+    margin-left: 3%;
+    accent-color: rebeccapurple;
+    scale: 1;
+    transition: scale 0.2s linear, transform 0.2s linear;
+}
+
+
+body div main #filterForm > fieldset > label > input[type="radio"]:checked{
+    accent-color: rebeccapurple;
+    scale: 1.5;
+    transition: scale 0.2s linear, transform 0.2s linear;
+}
+
+
+body div main #filterForm > fieldset > label > input[type="checkbox"]{
+    margin-right: 2%;
+    margin-left: 3%;
+    accent-color: rebeccapurple;
+    scale: 1;
+    transition: scale 0.2s linear, transform 0.2s linear;
+}
+
+
+body div main #filterForm > fieldset > label > input[type="checkbox"]:checked{
+    padding-right: 1%;
     accent-color: rebeccapurple;
     scale: 1.5;
     transition: scale 0.2s linear, transform 0.2s linear;
@@ -625,6 +642,52 @@ body div main #filterForm  > label > span::before, legend::before{
 body div main #filterForm > label > .notRequired::before{
     content: "";
     padding-right: 3.8%;
+}
+
+body div main #filterForm input[type=text], input[type=submit]{
+    height: 25px;
+    border-inline-start: gray solid 3px;
+    border-inline-end: silver solid 3px;
+    border-block-start: darkgoldenrod solid 3px;
+    border-block-end: goldenrod solid 3px;
+}
+
+body div main #filterForm input[type=text]::placeholder{
+    font-size: 12px;
+}
+
+
+body div main #filterForm input[type=text]:focus{
+    color: black;
+    border: 3px solid darkgoldenrod;
+    outline: 1px solid darkgoldenrod;
+}
+
+body div main #filterForm #launch:focus{
+    color: dimgray;
+    border: 3px solid darkgoldenrod;
+    outline: 1px solid darkgoldenrod;
+}
+
+body div main #filterForm > label > #launch{
+    font-size: 20px;
+    color: dimgray;
+    text-align: center;
+    direction: rtl;
+    width: 6.4%;
+    height: 45px;
+    transition: scale 0.1s ease-in;
+}
+
+body div main #filterForm > label > #launch:hover{
+    font-size: 22px;
+    font-weight: bold;
+    color: gray;
+}
+
+body div main #filterForm > label > #launch:active{
+    scale:0.94;
+    transition: scale 0.1s ease-out;
 }
 
 
