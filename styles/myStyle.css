@@ -420,13 +420,13 @@ body div main #contactUsForm #subscribe{
     position: relative;
     scale: 1.5; 
     top: 5px;
-    transform: rotate(1deg);
+    transform: rotate(0deg);
     transition: scale 0.1s linear, transform 0.1s linear;
 }
 
 body div main #contactUsForm #subscribe:checked{
     scale: 2;
-    transform: rotate(17deg);
+    transform: rotate(16deg);
     transition: scale 0.2s linear, transform 0.2s linear;
 }
 
