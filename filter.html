@@ -85,14 +85,53 @@
             <h1 id="filterTitle">התאם לי טיול</h1>
             <span id="requiredField">זהו שדה חובה</span>
             <form id="filterForm">
+                <label for="firstName">
+                    <span>שם פרטי:</span>
+                    <br><br>
+                    <input type="text" id="firstName" placeholder="הקלד/י את השם הפרטי" pattern="^[\u0590-\u05FF\s]+$" title="&#10;&#10;יש להזין שם פרטי בעברית בלבד" required>
+                    </label>
+                <br><br>
                 <fieldset>
-                    <legend>בחר/י את הקטגוריות שמעניינות אותך</legend>
-                    <input type="checkbox" id="check1" >מסעדות<br>
-                    <input type="checkbox" id="check2" >מלונות<br>
-                    <input type="checkbox" id="check3" >אתרים היסטוריים<br>
-                    <input type="checkbox" id="check4" >מוזיאונים<br>
-                    <input type="checkbox" id="check5" >תצפיות<br>
+                    <legend title="בחר/י את סוג הטיול">סוג הטיול:</legend><br>
+                    <label for="historic">
+                        <input type="radio" name="tripType" id="historic" value="1 - היסטורי-תרבותי" required>היסטורי-תרבותי<br><br>
+                    </label>
+                    <label for="family">
+                        <input type="radio" name="tripType" id="family" value="2 - משפחתי-ילדי">משפחתי-ילדי<br><br>
+                    </label>
+                    <label for="romantic">
+                        <input type="radio" name="tripType" id="romantic" value="3 - זוגי-רומנטי">זוגי-רומנטי<br><br>
+                    </label>
+                    <label for="scenic">
+                        <input type="radio" name="tripType" id="scenic" value="4 - נופי-אתרי">נופי-אתרי<br><br>
+                    </label>
                 </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend title="בחר/י מה הכי מעניין אותך">מה הכי מעניין אותך?</legend><br>
+                    <label for="restaurants">
+                        <input type="checkbox" name="mostInterested" id="restaurants" value="1 - מסעדות" required>מסעדות<br><br>
+                    </label>
+                    <label for="hotels">
+                        <input type="checkbox" name="mostInterested" id="hotels" value="2 - מלונות">מלונות<br><br>
+                    </label>
+                    <label for="historicalSites">
+                        <input type="checkbox" name="mostInterested" id="historicalSites" value="3 - אתרים היסטוריים">אתרים היסטוריים<br><br>
+                    </label>
+                    <label for="events">
+                        <input type="checkbox" name="mostInterested" id="events" value="4 - אירועים מיוחדים">אירועים מיוחדים<br><br>
+                    </label>
+                    <label for="museums">
+                        <input type="checkbox" name="mostInterested" id="museums" value="5 - מוזיאונים">מוזיאונים<br><br>
+                    </label>
+                    <label for="viewpoints">
+                        <input type="checkbox" name="mostInterested" id="viewpoints" value="6 - תצפיות">תצפיות<br><br>
+                    </label>
+                </fieldset>
+                <label for="launch">
+                    <br><br>
+                    <input type="submit" id="launch" value="שגר">
+                </label>
                 <br><br>
             </form>
         </main>

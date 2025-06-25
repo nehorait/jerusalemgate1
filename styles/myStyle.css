@@ -130,6 +130,7 @@ body div header nav > ul > li > #activePageHeader{
     border-bottom-right-radius: 7px;
 }
 
+
 body div header nav ul li ul{
     display:none;
     padding-top: 63px;
@@ -146,6 +147,11 @@ body div header nav ul li ul li{
     border-bottom: 21px solid silver;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+body div header nav > ul > li > ul > li > #activePage{
+    font-weight: bold;
+    color: rebeccapurple;
 }
 
 body div header nav ul li ul li:last-child{
@@ -210,7 +216,7 @@ body div header nav ol li a{
 }
 
 body div header nav ol li:last-child a{
-    color: dimgray;
+    color: rebeccapurple;
     text-decoration: unset;
     font-weight: bold;
     font-size: 18px;
@@ -396,6 +402,9 @@ body div main #contactUsForm input, select{
 body div main #contactUsForm input{
     height: 25px;
 }
+body div main #contactUsForm input::placeholder{
+    font-size: 12px;
+}
 
 body div main #contactUsForm select{
     height: 35px;
@@ -404,6 +413,13 @@ body div main #contactUsForm select{
     font-size: 18px;
 }
 
+body div main #contactUsForm select > option{
+    color: rebeccapurple;
+}
+
+body div main #contactUsForm select > option:first-child{
+    color: black;
+}
 
 body div main #contactUsForm input:focus, select:focus{
     color: black;
@@ -411,25 +427,6 @@ body div main #contactUsForm input:focus, select:focus{
     outline: 1px solid dimgray;
 }
 
-body div main #contactUsForm input::placeholder{
-    font-size: 12px;
-    
-}
-
-body div main #contactUsForm #subscribe{
-    outline: none;
-    position: relative;
-    scale: 1.5; 
-    top: 5px;
-    transform: rotate(0deg);
-    transition: scale 0.1s linear, transform 0.1s linear;
-}
-
-body div main #contactUsForm #subscribe:checked{
-    scale: 2;
-    transform: rotate(16deg);
-    transition: scale 0.2s linear, transform 0.2s linear;
-}
 
 body div main #contactUsForm textarea{
     border-inline-start: gray solid 4px;
@@ -478,6 +475,22 @@ body div main #contactUsForm > label > #launch{
     width: 6.4%;
     height: 45px;
     transition: scale 0.1s ease-in;
+}
+
+body div main #contactUsForm #subscribe{
+    outline: none;
+    position: relative;
+    scale: 1.5;
+    top: 5px;
+    transform: rotate(0deg);
+    transition: scale 0.1s linear, transform 0.1s linear;
+}
+
+body div main #contactUsForm #subscribe:checked{
+    accent-color: purple;
+    scale: 2;
+    transform: rotate(16deg);
+    transition: scale 0.2s linear, transform 0.2s linear;
 }
 
 
@@ -594,6 +607,20 @@ body div main #filterForm{
     width: 51.5%;
 }
 
+body div main #filterForm > label > span, legend{
+    font-weight: bold;
+}
+
+body div main #filterForm  > label > span::before, legend::before{
+    content: "* ";
+    color: orangered;
+}
+
+body div main #filterForm > label > .notRequired::before{
+    content: "";
+    padding-right: 3.8%;
+}
+
 
 body div footer{
     position: relative;
@@ -624,24 +651,38 @@ body div footer #footerDiv3{
 body div footer div p{
     height: 24px;
     position: relative;
-    text-decoration: underline;
-    color: black;
+    text-decoration: none;
+    color: rebeccapurple;
     font-size: 20px;
     font-weight: bold;
+}
+
+body div footer div p{
+    height: 24px;
+    position: relative;
+    text-decoration: none;
+    color: rebeccapurple;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 body div footer div a{
     position: relative;
     display: block;
     text-decoration: none;
-    color: dimgray;
+    color: black;
     font-size: 18px;
     margin-top: 10px;
 }
 
-body div footer div #activePageFooter {
+body div footer div #activePageFooterP {
     font-weight: bold;
-    text-decoration: underline dimgray 2px solid;
+    text-decoration: underline rebeccapurple 2px solid;
+}
+
+body div footer div #activePageFooterA {
+    color: darkgoldenrod;
+    font-weight: bold;
 }
 
 body div footer div .footer1Titles:hover{
