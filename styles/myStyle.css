@@ -420,16 +420,14 @@ body div main #contactUsForm #subscribe{
     position: relative;
     scale: 1.5; 
     top: 5px;
-}
-
-body div main #contactUsForm #subscribe:hover{
-    color: goldenrod;
+    transform: rotate(1deg);
+    transition: scale 0.1s linear, transform 0.1s linear;
 }
 
 body div main #contactUsForm #subscribe:checked{
     scale: 2;
     transform: rotate(17deg);
-    transition: scale 0.2s linear;
+    transition: scale 0.2s linear, transform 0.2s linear;
 }
 
 body div main #contactUsForm textarea{
