@@ -112,16 +112,27 @@
                 <label for="subject">
                     <span>נושא הפנייה:</span>
                     <br><br>
-                    <input type="text" id="subject" placeholder="הקלד/י את נושא הפנייה" pattern="^[\u0590-\u05FF\s]+$" title="&#10;&#10;יש להזין נושא בעברית בלבד" required>
+                    <select id="subject" placeholder="הקלד/י את נושא הפנייה" pattern="^[\u0590-\u05FF\s]+$" title="&#10;&#10;יש לבחור נושא מתוך הרשימה" required>
+                        <option value=""></option>
+                        <option value="1 - הוספת תכנים לאתר">הוספת תכנים לאתר</option>
+                        <option value="2 - תיקון תוכן באתר">תיקון תוכן באתר</option>
+                        <option value="3 - כל הצעה אחרת">כל הצעה אחרת</option>
+                        <option value="4 - הנושא לא נמצא ברשימה">הנושא לא נמצא ברשימה</option>
+                    </select>
                 </label>
                 <br><br>
                 <label for="content">
                     <span>תוכן הפנייה:</span>
                     <br><br>
-                    <textarea id="content" placeholder="הקלד/י את תוכן הפנייה" minlength="20" maxlength="200" required></textarea>
+                    <textarea id="content" placeholder="הקלד/י את תוכן הפנייה" minlength="20" maxlength="200" title="&#10;&#10;יש להזין בין 20 ל 200 אותיות" required></textarea>
                 </label>
+                <br><br>
+                <label for="subscribe">
+                    <span class="notRequired">רוצה לקבל עדכונים לדואר האלקטרוני: &NonBreakingSpace;&NonBreakingSpace;</span><input type="checkbox" id="subscribe" title="&#10;&#10;אם ברצונך לקבל עדכונים לדואר האלקטרוני יש לסמן את התיבה" checked>
+                </label>
+                <br><br>
                 <label for="launch">
-                    <br><br><br>
+                    <br><br>
                     <input type="submit" id="launch" value="שגר">
                 </label>
                 <br><br><br><br><br><br>

@@ -371,18 +371,19 @@ body div main #contactUsForm{
     width: 51.5%;
 }
 
-body div main #contactUsForm[title]{
-    color: darkgoldenrod;
-}
-
 
 body div main #contactUsForm > label > span{
-    font-weight: bold;
+        font-weight: bold;
 }
 
 body div main #contactUsForm > label > span::before{
     content: "* ";
     color: orangered;
+}
+
+body div main #contactUsForm > label > .notRequired::before{
+    content: "";
+    padding-right: 1%;
 }
 
 body div main #contactUsForm input{
@@ -403,6 +404,18 @@ body div main #contactUsForm input:focus{
 body div main #contactUsForm input::placeholder{
     font-size: 12px;
     
+}
+
+body div main #contactUsForm #subscribe{
+    position: relative;
+    scale: 1.5; 
+    top: 5px;
+}
+
+body div main #contactUsForm #subscribe:checked{
+    scale: 2;
+    transform: rotate(17deg);
+    transition: scale 0.2s linear;
 }
 
 body div main #contactUsForm textarea{
