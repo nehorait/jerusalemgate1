@@ -154,6 +154,12 @@ body div header nav > ul > li > ul > li > #activePage{
     color: rebeccapurple;
 }
 
+body div header nav > ul > li > ul > li > #activePage:hover{
+    font-size: 20px;
+    font-weight: bold;
+    color: mediumpurple;
+}
+
 body div header nav ul li ul li:last-child{
     border-bottom: none;
 }
@@ -215,11 +221,19 @@ body div header nav ol li a{
     color: black;
 }
 
+body div header nav ol li a:hover{
+    text-decoration: underline;
+}
+
 body div header nav ol li:last-child a{
     color: rebeccapurple;
     text-decoration: unset;
     font-weight: bold;
     font-size: 18px;
+}
+
+body div header nav ol li:last-child a:hover{
+    text-decoration: underline;
 }
 
 body div header nav ol li:after{
@@ -309,7 +323,7 @@ body div #sitemapMain {
 
 body div #sitemapMain div {
     text-align: justify;
-    margin: 3.7% 1.02% 7.4% 1.02%;
+    margin: 3.5% 1.03% 7% 1.02%;
     vertical-align: top;
     display: inline-block;
     width: 8.5%;
@@ -404,6 +418,7 @@ body div main #contactUsForm input[type=text], input[type=tel],input[type=email]
 }
 body div main #contactUsForm input[type="text"]::placeholder,input[type="tel"]::placeholder,input[type="email"]::placeholder{
     font-size: 12px;
+    color: dimgray;
 }
 
 body div main #contactUsForm select{
@@ -445,6 +460,7 @@ body div main #contactUsForm textarea:focus{
 
 body div main #contactUsForm textarea::placeholder{
     font-size: 14px;
+    color: dimgray;
 }
 
 body div main #contactUsForm #phone, #email{
@@ -654,6 +670,7 @@ body div main #filterForm input[type=text], input[type=submit]{
 
 body div main #filterForm input[type=text]::placeholder{
     font-size: 12px;
+    color: darkgoldenrod;
 }
 
 
@@ -744,6 +761,11 @@ body div footer div a{
     margin-top: 10px;
 }
 
+body div footer div .footer1Titles:hover{
+    color: dimgray;
+    font-weight: bold;
+}
+
 body div footer div #activePageFooterP {
     font-weight: bold;
     text-decoration: underline rebeccapurple 2px solid;
@@ -754,10 +776,10 @@ body div footer div #activePageFooterA {
     font-weight: bold;
 }
 
-body div footer div .footer1Titles:hover{
-    color: gray;
-    font-weight: bold;
+body div footer div #activePageFooterA:hover {
+    color: goldenrod;
 }
+
 
 body div footer #footerAllRightsReserved{
     position: absolute;
