@@ -487,7 +487,7 @@ body div main #contactUsForm #subscribe{
 }
 
 body div main #contactUsForm #subscribe:checked{
-    accent-color: purple;
+    accent-color: rebeccapurple;
     scale: 2;
     transform: rotate(16deg);
     transition: scale 0.2s linear, transform 0.2s linear;
@@ -605,6 +605,12 @@ body div main #filterForm{
     top: 50px;
     right: 23.5%;
     width: 51.5%;
+}
+
+body div main #filterForm > fieldset input[type="checkbox"]:checked{
+    accent-color: rebeccapurple;
+    scale: 1.5;
+    transition: scale 0.2s linear, transform 0.2s linear;
 }
 
 body div main #filterForm > label > span, legend{
