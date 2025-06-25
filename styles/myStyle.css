@@ -383,19 +383,29 @@ body div main #contactUsForm > label > span::before{
 
 body div main #contactUsForm > label > .notRequired::before{
     content: "";
-    padding-right: 1%;
+    padding-right: 3.8%;
 }
 
-body div main #contactUsForm input{
-    height: 25px;
+body div main #contactUsForm input, select{
     border-inline-start: gray solid 3px;
     border-inline-end: silver solid 3px;
     border-block-start: darkgoldenrod solid 3px;
     border-block-end: goldenrod solid 3px;
 }
 
+body div main #contactUsForm input{
+    height: 25px;
+}
 
-body div main #contactUsForm input:focus{
+body div main #contactUsForm select{
+    height: 35px;
+    width: 250px;
+    background-color: whitesmoke;
+    font-size: 18px;
+}
+
+
+body div main #contactUsForm input:focus, select:focus{
     color: black;
     border: 3px solid dimgray;
     outline: 1px solid dimgray;
@@ -410,6 +420,10 @@ body div main #contactUsForm #subscribe{
     position: relative;
     scale: 1.5; 
     top: 5px;
+}
+
+body div main #contactUsForm #subscribe:hover{
+    color: goldenrod;
 }
 
 body div main #contactUsForm #subscribe:checked{
