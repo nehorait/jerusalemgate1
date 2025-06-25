@@ -520,13 +520,14 @@ body div #aboutTitle{
 }
 
 body div #aboutMain div article h2{
+    margin-bottom:0;
     text-align: right;
     color: darkgoldenrod;
 }
 
 body div #aboutMain div article h3{
     margin-bottom: 0;
-    text-align: center;
+    text-align: right;
     color: dimgray;
 }
 
@@ -557,9 +558,15 @@ body div #aboutMain div article .aboutSiteLinks{
 }
 
 body div #aboutMain div article .aboutSiteLinks:before {
-    content: "○ ";
+    content: "● ";
+    color: dimgray;
+}
+
+body div #aboutMain div article .aboutSiteLinks:hover:before{
+    content: "● ";
     color: gray;
 }
+
 body div #aboutMain div article .aboutSiteLinks:hover{
     color: goldenrod;
     font-weight: bold;
