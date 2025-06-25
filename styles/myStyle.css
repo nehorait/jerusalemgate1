@@ -546,6 +546,10 @@ body div #aboutMain div article a{
     margin-bottom: 2.5%;
 }
 
+body div #aboutMain div article #rebeccapurpleA{
+    color: rebeccapurple;
+}
+
 body div #aboutMain div article .aboutSiteLinks{
     color: darkgoldenrod;
     text-decoration: none;
