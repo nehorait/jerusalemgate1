@@ -322,11 +322,13 @@ body div #sitemapMain {
 }
 
 body div #sitemapMain div {
+    position: relative;
     text-align: justify;
-    margin: 3.5% 1.03% 7% 1.02%;
+    right: 1.8%;
+    margin: 4% 1.03% 8% 1.02%;
     vertical-align: top;
     display: inline-block;
-    width: 8.5%;
+    width: 12%;
 }
 
 body div main div .smTitles{
@@ -339,8 +341,8 @@ body div main div .smTitles{
 
 body div main div .sm1Titles, .sm2Titles{
     width: fit-content;
-    margin-top:18%;
-    margin-bottom: 18%;
+    margin-top:12%;
+    margin-bottom: 12%;
     text-decoration: none;
     display: block;
     color: darkgoldenrod;
@@ -353,6 +355,17 @@ body div main div .sm1Titles:hover{
 
 body div main div .sm2Titles{
     cursor: not-allowed;
+}
+
+
+body div main div .sm1Titles:before, .sm2Titles:before {
+    content: "● ";
+    color: rebeccapurple;
+}
+
+body div main div .sm1Titles:hover:before{
+    content: "● ";
+    color: mediumpurple;
 }
 
 body div main strong{
