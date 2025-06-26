@@ -576,7 +576,7 @@ body div main #filterForm > label > #launch{
     color: dimgray;
     text-align: center;
     direction: rtl;
-    width: 6.4%;
+    width: 16.4%;
     height: 45px;
     transition: scale 0.1s ease-in;
 }
