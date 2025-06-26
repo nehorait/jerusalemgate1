@@ -4,34 +4,28 @@
     url("../fonts/yehudaclm-light-webfont.ttf") format("truetype");
     font-weight: normal;
 }
-
 @font-face {
     font-family: "YehudaCLM";
     src: url("../fonts/yehudaclm-bold-webfont.woff") format("woff"),
     url("../fonts/yehudaclm-bold-webfont.ttf") format("truetype");
     font-weight: bold;
 }
-
 *:focus{
     outline: rebeccapurple 2px solid;
 }
-
 body {
     direction: rtl;
 }
-
 body #container {
     display: block;
     background-color:whitesmoke;
 }
-
 body div header{
     text-align: center;
     max-height: 100px;
     background-color: goldenrod;
     font-family: "YehudaCLM", sans-serif;
 }
-
 body div header #bsd{
     position: absolute;
     top: 1%;
@@ -41,7 +35,6 @@ body div header #bsd{
     text-align: right;
     font-size: 14px;
 }
-
 body div header #navLogo{
     position: absolute;
     top: 1%;
@@ -50,45 +43,34 @@ body div header #navLogo{
     z-index: 15;
     transition: 0.5s ease;
 }
-
 body div header #navLogo:hover{
     transform: rotate(4deg);
     filter: brightness(106%) saturate(109%);
     transition:0.5s ease;
 }
-
 body div header #navLogo:active{
     scale: 0.96;
 }
-
 body div header nav {
     position: relative;
-}
-
-body div header #mainNav {
-    
 }
 
 body div header #secondNav {
     background-color: silver;
 }
-
 body div header nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
     z-index: 10;
 }
-
 body div header nav ul li {
     width: 200px;
     height: 40px;
 }
-
 body div header nav > ul > li{
     display: inline-block;
 }
-
 body div header nav ul li a{
     background-color: whitesmoke;
     color: darkgoldenrod;
@@ -98,22 +80,17 @@ body div header nav ul li a{
     float: right;
     font-size:18px;
 }
-
 body div header nav > ul > li > a{
     font-size: 20px;
     font-weight: normal;
     padding-top: 20px;
     outline: 4px solid whitesmoke;
 }
-
-
 body div header nav > ul > li:hover > a{
     background-color: whitesmoke;
     color: goldenrod;
     outline: 4px solid whitesmoke;
 }
-
-
 body div header nav > ul > li > #activePageHeader{
     font-weight: bold;
     font-size:22px;
@@ -121,52 +98,40 @@ body div header nav > ul > li > #activePageHeader{
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
 }
-
-
 body div header nav ul li ul{
     display:none;
     padding-top: 63px;
     width:200px;
     position: absolute;
 }
-
-
 body div header nav ul li:hover ul{
     display:block;
 }
-
 body div header nav ul li ul li{
     border-bottom: 21px solid silver;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
 body div header nav > ul > li > ul > li > #activePage{
     font-weight: bold;
     color: rebeccapurple;
 }
-
 body div header nav > ul > li > ul > li > #activePage:hover{
     font-size: 20px;
     font-weight: bold;
     color: mediumpurple;
 }
-
 body div header nav ul li ul li:last-child{
     border-bottom: none;
 }
-
 body div header nav ul li ul li a {
     padding-top: 10px;
     outline: 4px solid whitesmoke;
 }
-
-
 body div header nav ul li ul .nav1Titles{
     transition: scale 0.1s ease-out;
     cursor: pointer;
 }
-
 body div header nav ul li ul .nav1Titles:hover  {
     color: goldenrod;
     outline: 6px solid whitesmoke;
@@ -176,23 +141,16 @@ body div header nav ul li ul .nav1Titles:hover  {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-
-
 body div header nav ul li ul .nav1Titles:active{
     scale: 98%;
 }
-
 body div header nav ul li ul .nav2Titles{
     cursor: not-allowed;
 }
-
 body div header nav ul li ul .nav2Titles:hover{
     color:darkgoldenrod;
     outline: 4px solid whitesmoke;
 }
-
-
-
 body div header nav ol{
     list-style: none;
     padding-top: 10px;
@@ -202,40 +160,32 @@ body div header nav ol{
     right: 22.95%;
     max-width: 52%;
 }
-
 body div header nav ol li{
    display: inline-block;
 }
-
 body div header nav ol li a{
     z-index: 5;
     text-decoration: none;
     color: black;
 }
-
 body div header nav ol li a:hover{
     text-decoration: underline;
 }
-
 body div header nav ol li:last-child a{
     color: rebeccapurple;
     text-decoration: unset;
     font-weight: bold;
     font-size: 18px;
 }
-
 body div header nav ol li:last-child a:hover{
     text-decoration: underline;
 }
-
 body div header nav ol li:after{
     content: " >";
 }
-
 body div header nav ol li:last-child:after{
     content: "";
 }
-
 body div #oldCityImage{
     margin-top: 10%;
     position: absolute;
@@ -244,11 +194,9 @@ body div #oldCityImage{
     border-radius: 30px;
     transition: transform 0.5s ease;
 }
-
 body div #oldCityImage:hover {
     transform: scale(1.05);
 }
-
 body div #israelMuseumImage{
     margin-top: 50%;
     position: absolute;
@@ -257,25 +205,21 @@ body div #israelMuseumImage{
     border-radius: 30px;
     transition: transform 0.5s ease;
 }
-
 body div #israelMuseumImage:hover {
     transform: scale(1.05);
 }
-
 body div main{
     font-family: Tahoma, sans-serif;
     padding-top: 10px;
     position: relative;
     padding-bottom: 2%;
 }
-
 body div main h1{
     font-size: 45px;
     font-weight: bold;
     color: gray;
     text-align: center;
 }
-
 body div main h2{
     font-size: 30px;
     font-weight: bold;
@@ -283,36 +227,26 @@ body div main h2{
     text-align: center;
 
 }
-
 body div main h3{
     font-size: 20px;
     font-weight: bold;
     text-align: right;
     color: black;
 }
-
 body div main ul li{
     list-style: none;
 }
-
 body div main ul li:before{
     content: "○ ";
     color: gray;
 }
-
-body div main p{
-    
-}
-
 body div main #sitemapTitle{
     
 }
-
 body div #sitemapMain {
     position: relative;
     text-align: center;
 }
-
 body div #sitemapMain div {
     position: relative;
     text-align: justify;
@@ -322,7 +256,6 @@ body div #sitemapMain div {
     display: inline-block;
     width: 12%;
 }
-
 body div main div .smTitles{
     margin-bottom: 0;
     height: 30px;
@@ -331,7 +264,6 @@ body div main div .smTitles{
     font-size: 18px;
     color: black;
 }
-
 body div main div .sm1Titles, .sm2Titles{
     width: fit-content;
     margin-top:12%;
@@ -340,41 +272,32 @@ body div main div .sm1Titles, .sm2Titles{
     display: block;
     color: darkgoldenrod;
 }
-
 body div main div .sm1Titles:hover{
     color: goldenrod;
     font-weight: bold;
 }
-
 body div main div .sm2Titles{
     cursor: not-allowed;
 }
-
-
 body div main div .sm1Titles:before, .sm2Titles:before {
     content: "● ";
     color: rebeccapurple;
 }
-
 body div main div .sm1Titles:hover:before{
     content: "● ";
     color: mediumpurple;
 }
-
 body div main strong{
     color: darkgoldenrod;
 }
-
 body div main aside #israelMuseumSite{
     position: relative;
     right: 55%;
     color: darkgoldenrod;
 }
-
 body div main #contactUsTitle{
     color: darkgoldenrod;
 }
-
 body div main #requiredField{
     position: relative;
     text-align: right;
@@ -382,12 +305,10 @@ body div main #requiredField{
     right: 23.5%;
     font-size: 14px;
 }
-
 body div main #requiredField::before{
     content: "* ";
     color: orangered;
 }
-
 body div main #contactUsForm{
     position: relative;
     display: block;
@@ -396,29 +317,23 @@ body div main #contactUsForm{
     right: 23.5%;
     width: 51.5%;
 }
-
-
 body div main #contactUsForm > label > span{
         font-weight: bold;
 }
-
 body div main #contactUsForm > label > span::before{
     content: "* ";
     color: orangered;
 }
-
 body div main #contactUsForm > label > .notRequired::before{
     content: "";
     padding-right: 3.8%;
 }
-
 body div main #contactUsForm input[type=text],input[type=tel],input[type=email], select, input[type=submit]{
     border-inline-start: gray solid 3px;
     border-inline-end: silver solid 3px;
     border-block-start: darkgoldenrod solid 3px;
     border-block-end: goldenrod solid 3px;
 }
-
 body div main #contactUsForm input[type=text], input[type=tel],input[type=email]{
     height: 25px;
 }
@@ -426,7 +341,6 @@ body div main #contactUsForm input[type="text"]::placeholder,input[type="tel"]::
     font-size: 12px;
     color: dimgray;
 }
-
 body div main #contactUsForm select{
     height: 35px;
     width: 250px;
@@ -434,25 +348,20 @@ body div main #contactUsForm select{
     background-color: whitesmoke;
     font-size: 18px;
 }
-
 body div main #contactUsForm select > option:first-child{
     color: black;
     font-weight: normal;
 }
-
 body div main #contactUsForm select > option{
     font-size: 16px;
     color: rebeccapurple;
     font-weight: bold;
 }
-
 body div main #contactUsForm input[type="text"]:focus,input[type="tel"]:focus,input[type="email"]:focus, select:focus, input[type=submit]:focus{
     color: black;
     border: 3px solid dimgray;
     outline: 1px solid dimgray;
 }
-
-
 body div main #contactUsForm textarea{
     border-inline-start: gray solid 4px;
     border-inline-end: silver solid 4px;
@@ -461,41 +370,34 @@ body div main #contactUsForm textarea{
     width: 400px;
     height: 100px;
 }
-
 body div main #contactUsForm textarea:focus{
     color: black;
     border: 4px solid dimgray;
     outline: 1px solid dimgray;
 }
-
 body div main #contactUsForm textarea::placeholder{
     font-size: 14px;
     color: dimgray;
 }
-
 body div main #contactUsForm #phone, #email{
     text-align: left;
     direction: ltr;
 }
-
 body div main #contactUsForm #phone::placeholder, #email::placeholder{
     text-align: right;
     direction: rtl;
 }
-
 body div main #contactUsForm #subscribe{
     scale: 1.5;
     transform: rotate(0deg);
     transition: scale 0.1s linear, transform 0.1s linear;
 }
-
 body div main #contactUsForm #subscribe:checked{
     accent-color: rebeccapurple;
     scale: 2;
     transform: rotate(16deg);
     transition: scale 0.2s linear, transform 0.2s linear;
 }
-
 body div main #contactUsForm > label > #launch{
     font-size: 20px;
     color: darkgoldenrod;
@@ -505,18 +407,15 @@ body div main #contactUsForm > label > #launch{
     height: 45px;
     transition: scale 0.1s ease-in;
 }
-
 body div main #contactUsForm > label > #launch:hover{
     font-size: 22px;
     font-weight: bold;
     color: goldenrod;
 }
-
 body div main #contactUsForm > label > #launch:active{
     scale:0.94;
     transition: scale 0.1s ease-out;
 }
-
 body div #aboutMain div{
     position: relative;
     display: block;
@@ -524,88 +423,70 @@ body div #aboutMain div{
     right: 23.6%;
     margin-bottom: 0;
 }
-
 body div #aboutTitle{
         color: black;
 }
-
 body div #aboutMain div article h2{
     margin-bottom:0;
     text-align: right;
     color: darkgoldenrod;
 }
-
 body div #aboutMain div article h3{
     margin-bottom: 0;
     text-align: right;
     color: dimgray;
 }
-
 body div #aboutMain div article strong{
     color: dimgray;
 }
-
 body div #aboutMain div article p{
     font-size: 20px;
     font-weight: bold;
 }
-
 body div #aboutMain div article a{
     font-size: 18px;
     display: block;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
 }
-
 body div #aboutMain div article #rebeccapurpleStrong{
     color: rebeccapurple;
 }
-
 body div #aboutMain div article .aboutSiteLinks{
     color: darkgoldenrod;
     text-decoration: none;
     width: fit-content;
 }
-
 body div #aboutMain div article .aboutSiteLinks:before {
     content: "● ";
     color: dimgray;
 }
-
 body div #aboutMain div article .aboutSiteLinks:hover:before{
     content: "● ";
     color: gray;
 }
-
 body div #aboutMain div article .aboutSiteLinks:hover{
     color: goldenrod;
     font-weight: bold;
 }
-
 body div aside #aboutHitLogoContainer{
     position: relative;
     text-align: center;
     margin-top: 0;
 }
-
 body div aside #aboutHitLogoContainer a {
     display: inline-block;
     text-decoration: none;
 }
-
 body div aside #aboutHitLogoContainer img {
     display: block;
     scale: 100%;
     transition: scale 0.5s ease-out;
-
 }
-
 body div aside #aboutHitLogoContainer img:hover{
     scale: 108%;
     transition: scale 0.5s ease-in;
 }
-
-
 body div aside #aboutHitLogoContainer #instructionalTechnologiesFacultyLink {
     color: rebeccapurple;
     font-weight: bold;
@@ -614,13 +495,11 @@ body div aside #aboutHitLogoContainer #instructionalTechnologiesFacultyLink {
     display: inline-block;
     transition: scale 0.15s ease-in-out;
 }
-
 body div aside #aboutHitLogoContainer #instructionalTechnologiesFacultyLink:hover {
     color: mediumpurple;
     scale: 104%;
     transition: color 0.15s ease-in-out;
 }
-
 body div main #filterForm{
     position: relative;
     display: block;
@@ -629,12 +508,9 @@ body div main #filterForm{
     right: 23.5%;
     width: 51.5%;
 }
-
 body div main #filterForm > fieldset{
     width: 33%;
 }
-
-
 body div main #filterForm > fieldset > label > input[type="radio"]{
     margin-right: 2%;
     margin-left: 3%;
@@ -642,15 +518,11 @@ body div main #filterForm > fieldset > label > input[type="radio"]{
     scale: 1;
     transition: scale 0.2s linear, transform 0.2s linear;
 }
-
-
 body div main #filterForm > fieldset > label > input[type="radio"]:checked{
     accent-color: rebeccapurple;
     scale: 1.5;
     transition: scale 0.2s linear, transform 0.2s linear;
 }
-
-
 body div main #filterForm > fieldset > label > input[type="checkbox"]{
     margin-right: 2%;
     margin-left: 3%;
@@ -658,29 +530,23 @@ body div main #filterForm > fieldset > label > input[type="checkbox"]{
     scale: 1;
     transition: scale 0.2s linear, transform 0.2s linear;
 }
-
-
 body div main #filterForm > fieldset > label > input[type="checkbox"]:checked{
     padding-right: 1%;
     accent-color: rebeccapurple;
     scale: 1.5;
     transition: scale 0.2s linear, transform 0.2s linear;
 }
-
 body div main #filterForm > label > span, legend{
     font-weight: bold;
 }
-
 body div main #filterForm  > label > span::before, legend::before{
     content: "* ";
     color: orangered;
 }
-
 body div main #filterForm > label > .notRequired::before{
     content: "";
     padding-right: 3.8%;
 }
-
 body div main #filterForm input[type=text], input[type=submit]{
     height: 25px;
     border-inline-start: gray solid 3px;
@@ -688,25 +554,20 @@ body div main #filterForm input[type=text], input[type=submit]{
     border-block-start: darkgoldenrod solid 3px;
     border-block-end: goldenrod solid 3px;
 }
-
 body div main #filterForm input[type=text]::placeholder{
     font-size: 12px;
     color: darkgoldenrod;
 }
-
-
 body div main #filterForm input[type=text]:focus{
     color: black;
     border: 3px solid darkgoldenrod;
     outline: 1px solid darkgoldenrod;
 }
-
 body div main #filterForm #launch:focus{
     color: dimgray;
     border: 3px solid darkgoldenrod;
     outline: 1px solid darkgoldenrod;
 }
-
 body div main #filterForm > label > #launch{
     font-size: 20px;
     color: dimgray;
@@ -716,19 +577,15 @@ body div main #filterForm > label > #launch{
     height: 45px;
     transition: scale 0.1s ease-in;
 }
-
 body div main #filterForm > label > #launch:hover{
     font-size: 22px;
     font-weight: bold;
     color: gray;
 }
-
 body div main #filterForm > label > #launch:active{
     scale:0.94;
     transition: scale 0.1s ease-out;
 }
-
-
 body div footer{
     position: relative;
     text-align: center;
@@ -737,24 +594,20 @@ body div footer{
     padding-bottom: 1%;
     font-family: "YehudaCLM", sans-serif;
 }
-
 body div footer div{
     width: 9%;
     position: relative;
     display: inline-block;
 }
-
 body div footer #footerDiv1{
     left: 1%;
 }
-
 body div footer #footerDiv2{
 }
 
 body div footer #footerDiv3{
     right: 2.3%
 }
-
 body div footer div p{
     height: 24px;
     position: relative;
@@ -763,7 +616,6 @@ body div footer div p{
     font-size: 20px;
     font-weight: bold;
 }
-
 body div footer div p{
     height: 24px;
     position: relative;
@@ -772,7 +624,6 @@ body div footer div p{
     font-size: 20px;
     font-weight: normal;
 }
-
 body div footer div a{
     position: relative;
     display: block;
@@ -781,27 +632,21 @@ body div footer div a{
     font-size: 18px;
     margin-top: 10px;
 }
-
 body div footer div .footer1Titles:hover{
     color: dimgray;
     font-weight: bold;
 }
-
 body div footer div #activePageFooterP {
     font-weight: bold;
     text-decoration: underline rebeccapurple 2px solid;
 }
-
 body div footer div #activePageFooterA {
     color: darkgoldenrod;
     font-weight: bold;
 }
-
 body div footer div #activePageFooterA:hover {
     color: goldenrod;
 }
-
-
 body div footer #footerAllRightsReserved{
     position: absolute;
     right: 2%;
