@@ -12,20 +12,12 @@
     font-weight: bold;
 }
 
-* {
-    
-}
-
 *:focus{
     outline: rebeccapurple 2px solid;
 }
 
 body {
     direction: rtl;
-}
-
-body input:focus{
-
 }
 
 body #container {
