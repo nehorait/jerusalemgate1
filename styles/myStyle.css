@@ -21,27 +21,28 @@ body #container {
     background-color:whitesmoke;
 }
 body div header{
+    position: relative;
     display: block;
     text-align: center;
     max-height: 100px;
     background-color: goldenrod;
     font-family: "YehudaCLM", sans-serif;
 }
-body div header #bsd{
+body div #bsd{  
     position: absolute;
-    top: 1%;
+    top: 7%;
     right: 1%;
     color: black;
-    z-index: 5;
     text-align: right;
     font-size: 14px;
+    z-index: 5;
 }
 body div header #navLogo{
-    position: absolute;
-    top: 1%;
-    right: 6%;
+    position: fixed;
+    top: 62px;
+    right: 0;
     color: black;
-    z-index: 5;
+    z-index: 4;
     transition: 0.5s ease;
 }
 body div header #navLogo:hover{
@@ -599,6 +600,7 @@ body div footer{
     font-family: "YehudaCLM", sans-serif;
 }
 body div footer div{
+    right: 1%;
     margin-right: 2%;
     margin-left: 2%;
     width: auto;
