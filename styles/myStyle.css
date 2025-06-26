@@ -52,8 +52,8 @@ body div header #bsd{
 
 body div header #navLogo{
     position: absolute;
-    bottom: 88.9%;
-    right: 11.5%;
+    top: 1%;
+    right: 10.5%;
     color: black;
     z-index: 15;
     transition: 0.5s ease;
@@ -438,16 +438,20 @@ body div main #contactUsForm input[type="text"]::placeholder,input[type="tel"]::
 body div main #contactUsForm select{
     height: 35px;
     width: 250px;
+    color: black;
     background-color: whitesmoke;
     font-size: 18px;
 }
 
-body div main #contactUsForm select > option{
-    color: rebeccapurple;
-}
-
 body div main #contactUsForm select > option:first-child{
     color: black;
+    font-weight: normal;
+}
+
+body div main #contactUsForm select > option{
+    font-size: 16px;
+    color: rebeccapurple;
+    font-weight: bold;
 }
 
 body div main #contactUsForm input[type="text"]:focus,input[type="tel"]:focus,input[type="email"]:focus, select:focus, input[type=submit]:focus{
@@ -613,7 +617,7 @@ body div aside #aboutHitLogoContainer img:hover{
 body div aside #aboutHitLogoContainer #instructionalTechnologiesFacultyLink {
     color: rebeccapurple;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 35px;
     text-decoration: none;
     display: inline-block;
     transition: scale 0.15s ease-in-out;
