@@ -357,7 +357,7 @@ body div main #contactUsForm select > option{
     color: rebeccapurple;
     font-weight: bold;
 }
-body div main #contactUsForm input[type="text"]:focus,input[type="tel"]:focus,input[type="email"]:focus, select:focus, input[type=submit]:focus{
+body div main #contactUsForm input[type="text"]:focus,input[type="tel"]:focus,input[type="email"]:focus, select:focus{
     color: black;
     border: 3px solid dimgray;
     outline: 1px solid dimgray;
@@ -406,6 +406,10 @@ body div main #contactUsForm > label > #launch{
     width: 6.4%;
     height: 45px;
     transition: scale 0.1s ease-in;
+}
+body div main #contactUsForm > label > #launch:focus{
+    border: 3px solid darkgoldenrod;
+    outline: 1px solid darkgoldenrod;
 }
 body div main #contactUsForm > label > #launch:hover{
     font-size: 22px;
@@ -564,9 +568,8 @@ body div main #filterForm input[type=text]:focus{
     outline: 1px solid darkgoldenrod;
 }
 body div main #filterForm #launch:focus{
-    color: dimgray;
-    border: 3px solid darkgoldenrod;
-    outline: 1px solid darkgoldenrod;
+    border: 3px solid dimgray;
+    outline: 1px solid dimgray;
 }
 body div main #filterForm > label > #launch{
     font-size: 20px;
