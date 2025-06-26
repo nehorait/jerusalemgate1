@@ -184,6 +184,7 @@ body div header nav ol li:last-child a:hover{
 }
 body div header nav ol li:after{
     content: " >";
+    color: black;
 }
 body div header nav ol li:last-child:after{
     content: "";
