@@ -21,6 +21,7 @@ body #container {
     background-color:whitesmoke;
 }
 body div header{
+    display: block;
     text-align: center;
     max-height: 100px;
     background-color: goldenrod;
@@ -31,16 +32,16 @@ body div header #bsd{
     top: 1%;
     right: 1%;
     color: black;
-    z-index: 10;
+    z-index: 5;
     text-align: right;
     font-size: 14px;
 }
 body div header #navLogo{
     position: absolute;
     top: 1%;
-    right: 10.5%;
+    right: 6%;
     color: black;
-    z-index: 15;
+    z-index: 5;
     transition: 0.5s ease;
 }
 body div header #navLogo:hover{
@@ -62,7 +63,7 @@ body div header nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    z-index: 10;
+    z-index: 5;
 }
 body div header nav ul li {
     width: 200px;
@@ -157,8 +158,8 @@ body div header nav ol{
     padding-bottom: 10px;
     text-align: right;
     position: relative;
-    right: 22.95%;
-    max-width: 52%;
+    right: 22%;
+    width: 40%;
 }
 body div header nav ol li{
    display: inline-block;
@@ -403,8 +404,8 @@ body div main #contactUsForm > label > #launch{
     color: darkgoldenrod;
     text-align: center;
     direction: rtl;
-    width: 6.4%;
-    height: 45px;
+    width: 70px;
+    height: 50px;
     transition: scale 0.1s ease-in;
 }
 body div main #contactUsForm > label > #launch:focus{
@@ -576,8 +577,8 @@ body div main #filterForm > label > #launch{
     color: dimgray;
     text-align: center;
     direction: rtl;
-    width: 16.4%;
-    height: 45px;
+    width: 155px;
+    height: 60px;
     transition: scale 0.1s ease-in;
 }
 body div main #filterForm > label > #launch:hover{
@@ -598,29 +599,13 @@ body div footer{
     font-family: "YehudaCLM", sans-serif;
 }
 body div footer div{
-    width: 9%;
+    margin-right: 2%;
+    margin-left: 2%;
+    width: auto;
     position: relative;
     display: inline-block;
 }
-body div footer #footerDiv1{
-    left: 1%;
-}
-body div footer #footerDiv2{
-}
-
-body div footer #footerDiv3{
-    right: 2.3%
-}
 body div footer div p{
-    height: 24px;
-    position: relative;
-    text-decoration: none;
-    color: rebeccapurple;
-    font-size: 20px;
-    font-weight: bold;
-}
-body div footer div p{
-    height: 24px;
     position: relative;
     text-decoration: none;
     color: rebeccapurple;
