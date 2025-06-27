@@ -614,7 +614,7 @@ body div main #filterResultContainer{
     height: 70%;
     width: 36%;
 }
-body div main #filterResultContainer > #filterMainImage{
+body div main #filterResultContainer > #filterMainImageContainer{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -624,13 +624,13 @@ body div main #filterResultContainer > #filterMainImage{
     height: 66%;
     width: 100%;
 }
-body div main #filterResultContainer > #filterMainImage > img{
-    border: 5px double darkgoldenrod;
+body div main #filterResultContainer > #filterMainImageContainer > #filterMainImage{
+    border: 4px double darkgoldenrod;
     display: block;
     width: 300px;
     opacity: 0;
 }
-body div main #filterResultContainer > #filterMainImages{
+body div main #filterResultContainer > #filterMainImagesContainer{
     position: absolute;
     border: 1px solid black;
     bottom: 66%;
