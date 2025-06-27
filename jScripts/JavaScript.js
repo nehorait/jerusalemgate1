@@ -1,4 +1,5 @@
 ﻿function launch(){
+    console.log("שלום");
     var image = document.getElementById("filterMainImage").value;
     console.log(image);
 }
