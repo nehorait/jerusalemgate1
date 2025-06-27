@@ -606,14 +606,36 @@ body div main #filterForm > label > #launch:hover{
 body div main #filterForm > label > #launch:active{
     scale:0.94;
 }
-
 body div main #filterResultContainer{
+    position: absolute;
     border: 1px solid darkgoldenrod;
     right: 49.5%;
     bottom: 10%;
     height: 70%;
     width: 36%;
+}
+body div main #filterResultContainer > #filterMainImage{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid darkgoldenrod;
+    bottom: 0;
+    height: 66%;
+    width: 100%;
+}
+body div main #filterResultContainer > #filterMainImage > img{
+    border: 5px double darkgoldenrod;
+    display: block;
+    width: 300px;
+    opacity: 0;
+}
+body div main #filterResultContainer > #filterMainImages{
+    position: absolute;
+    border: 1px solid black;
+    bottom: 66%;
+    height: 34%;
+    width: 100%;
 }
 body div footer{
     position: relative;
