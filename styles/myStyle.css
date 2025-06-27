@@ -582,6 +582,11 @@ body div main #filterForm input[type=text]:focus{
     border: 3px solid darkgoldenrod;
     outline: 1px solid darkgoldenrod;
 }
+body div main #filterForm #launch{
+    opacity: 50%;
+    cursor: not-allowed;
+}
+
 body div main #filterForm #launch:focus{
     border: 3px solid dimgray;
     outline: 1px solid dimgray;
