@@ -7,7 +7,7 @@
     <meta name="keywords" content="שער לירושלים, טופס אינטראקטיבי, התאם לי טיול, טיול בירושלים, טיול, ירושלים" />
     <meta name="author" content="שער לירושלים" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
+    <link rel="icon" href="images/favicon2.png" type="image/x-icon" />
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
 
@@ -16,8 +16,8 @@
 
     <!-- JS -->
     <script src="jScripts/jquery-1.12.0.min.js"></script>
-
-    <link rel="icon" href="images/favicon2.png" type="image/x-icon" />
+    <script src="jScripts/JavaScript.js"></script>
+    
 </head>
 <body>
     <div id="container">
@@ -124,13 +124,13 @@
                 </fieldset>
                 <label for="launch">
                     <br><br>
-                    <input type="submit" id="launch" value="התאם לי טיול">
+                    <input type="button" id="launch" value="התאם לי טיול" onclick="launch()">
                 </label>
                 <br><br><br><br><br>
             </form>
             <div id="filterResultContainer">
-                <div id="filterMainImage">
-                    <img src="images/filterform/mainimage/none.jpeg">
+                <div id="filterMainImageContainer">
+                    <img src="images/filterform/mainimage/none.jpeg" id="filterMainImage">
                 </div>
                 <div id="filterMainImages">
                     
