@@ -39,7 +39,7 @@ body div #bsd{
 }
 body div header #navLogo{
     position: fixed;
-    top: 62px;
+    top: 103px;
     right: 0;
     color: black;
     z-index: 4;
@@ -301,14 +301,14 @@ body div main aside #israelMuseumSite{
 body div main #contactUsTitle{
     color: darkgoldenrod;
 }
-body div main #requiredField{
+body div main #contactUsRequiredField{
     position: relative;
     text-align: right;
     top: 25px;
     right: 23.5%;
     font-size: 14px;
 }
-body div main #requiredField::before{
+body div main #contactUsRequiredField::before{
     content: "* ";
     color: orangered;
 }
@@ -513,11 +513,22 @@ body div main #filterForm{
     display: block;
     text-align: right;
     top: 50px;
-    right: 23.5%;
-    width: 51.5%;
+    right: 15%;
+    width: 28.5%;
+}
+body div main #filterRequiredField{
+    position: relative;
+    text-align: right;
+    top: 25px;
+    right: 15%;
+    font-size: 14px;
+}
+body div main #filterRequiredField::before{
+    content: "* ";
+    color: orangered;
 }
 body div main #filterForm > fieldset{
-    width: 33%;
+    width: 66%;
 }
 body div main #filterForm > fieldset > label > input[type="radio"]{
     margin-right: 2%;
@@ -596,10 +607,14 @@ body div main #filterForm > label > #launch:active{
     scale:0.94;
 }
 
-
-
-
-
+body div main #filterResultContainer{
+    border: 1px solid darkgoldenrod;
+    right: 49.5%;
+    bottom: 10%;
+    height: 70%;
+    width: 36%;
+    position: absolute;
+}
 body div footer{
     position: relative;
     text-align: center;
