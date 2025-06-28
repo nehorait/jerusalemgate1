@@ -613,10 +613,9 @@ body div main #filterForm > label > #launch:active{
 }
 body div main #filterResultContainer{
     position: absolute;
-    border: 1px solid darkgoldenrod;
     right: 49.5%;
-    bottom: 10%;
-    height: 70%;
+    bottom: 1%;
+    height: 80%;
     width: 36%;
 }
 body div main #filterResultContainer > #filterMainImageContainer{
@@ -624,7 +623,6 @@ body div main #filterResultContainer > #filterMainImageContainer{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid darkgoldenrod;
     bottom: 0;
     height: 66%;
     width: 100%;
@@ -632,15 +630,23 @@ body div main #filterResultContainer > #filterMainImageContainer{
 body div main #filterResultContainer > #filterMainImageContainer > #filterMainImage{
     border: 4px double darkgoldenrod;
     display: block;
-    width: 300px;
-    opacity: 0;
+    width: 400px;
+    opacity: 1;
 }
 body div main #filterResultContainer > #filterMainImagesContainer{
     position: absolute;
-    border: 1px solid black;
     bottom: 66%;
     height: 34%;
     width: 100%;
+    margin-bottom: 25px;
+}
+body div main #filterResultContainer > #filterMainImagesContainer > .filterMainImages{
+    float: right;
+    margin: 1px 1px 1px 1px;
+    border: 2px double darkgoldenrod;
+    width: 24%;
+    height: 32%;
+    opacity: 0.5;
 }
 body div footer{
     position: relative;

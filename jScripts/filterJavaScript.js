@@ -38,24 +38,24 @@ function activeRadioChoice(){
 }
 function activeCheckboxChoices(){
     userCheckboxChoices = [];
-    const checkboxMostInterested = document.getElementsByName("mostInterested");{
+    const checkboxMostInterested = document.getElementsByName("mostInterested");
         for (let i=0; i < checkboxMostInterested.length; i++){
             if (checkboxMostInterested[i].checked === true){
                 userCheckboxChoices[i]= i+1;
             }
+            console.log(userCheckboxChoices);
         }
         if (userCheckboxChoices[0] === 1){
-            console.log(userCheckboxChoices[0]);
+            
         }
         if (userCheckboxChoices[1] === 2){
-            console.log(userCheckboxChoices[1]);
+            
         }
         if (userCheckboxChoices[2] === 3){
-            console.log(userCheckboxChoices[2]);
+            
         }
         if (userCheckboxChoices[3] === 4){
-            console.log(userCheckboxChoices[3]);
+            
         }
         console.log(userCheckboxChoices);
-    }
 }
