@@ -243,9 +243,6 @@ body div main ul li:before{
     content: "○ ";
     color: gray;
 }
-body div main #sitemapTitle{
-    color: rebeccapurple;
-}
 body div #sitemapMain {
     position: relative;
     text-align: center;
@@ -507,6 +504,9 @@ body div aside #aboutHitLogoContainer #instructionalTechnologiesFacultyLink:hove
     color: mediumpurple;
     scale: 104%;
     transition: color 0.15s ease-in-out;
+}
+body div main #filterTitle{
+    color: rebeccapurple;
 }
 body div main #filterForm{
     position: relative;
