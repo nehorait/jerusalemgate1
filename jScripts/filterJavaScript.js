@@ -21,20 +21,6 @@ function clear(){
     if (textFirstName.length >= 2 && hebrewRegex.test(textFirstName)) {
         userFirstName = textFirstName;
         isUserFirstNameValid = true;
-    //    if (userRadioChoice === 0 && userCheckboxChoices === 0) {
-         //   alert("בחר/י אופציה אחת מהכתפורים העגולים ובאחת מהכפתורים המרובעים לפחות");
-       // }else{
-       //     if (userRadioChoice === 0 && userCheckboxChoices !== 0) {
-       //         alert("בחר/י אופציה אחת מהכתפורים העגולים");
-       //     }else{
-         //       if (userRadioChoice !== 0 && userCheckboxChoices === 0) {
-           //         alert("בחר/י אופציה אחת מהכפתורים המרובעים לפחות");
-///
-           //     }else{
-               //     alert("כל הכבוד!")
-         //       }
-      //      }
-    //    }
     }else{
         isUserFirstNameValid = false;
     }
@@ -122,10 +108,8 @@ function activeCheckboxChoices(){
 function checkFormValidity(){
     const buttonMatch = document.getElementById("match");
     if (isUserFirstNameValid === true && isUserRadioChoiceValid === true && isUserCheckBoxChoicesValid === true ){
-        console.log("enabled");
         buttonMatch.disabled = false;
     }else{
-        console.log ("disabled");
         buttonMatch.disabled  = true;
     }
 }
