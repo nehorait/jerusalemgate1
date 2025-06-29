@@ -570,6 +570,9 @@ body div main #filterForm input[type=text], input[type=button]{
     border-block-start: darkgoldenrod solid 3px;
     border-block-end: goldenrod solid 3px;
 }
+body div main #filterForm input[type=text]{
+    width: 345px;
+}
 body div main #filterForm input[type=text]::placeholder{
     font-size: 12px;
     color: darkgoldenrod;

@@ -36,7 +36,6 @@ function clear(){
       //      }
     //    }
     }else{
-        alert("הקלד/י בבקשה שם פרטי או כינוי בעברית בלבד שגדול או שווה ל 2 תווים");
         isUserFirstNameValid = false;
     }
      checkFormValidity()
