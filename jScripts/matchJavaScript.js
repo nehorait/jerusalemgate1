@@ -11,7 +11,7 @@ function clearAll(){
     isUserFirstNameValid = false;
     isUserRadioChoiceValid = false;
     isUserCheckBoxChoicesValid = false;
-    document.getElementById("filterForm").reset();
+    document.getElementById("matchForm").reset();
     document.getElementById("match").disabled = true;
 }
  function firstName() {
@@ -26,7 +26,7 @@ function clearAll(){
      checkFormValidity()
 }
 function activeRadioChoice(){
-    const mainImage = document.getElementById("filterMainImage");
+    const mainImage = document.getElementById("matchMainImage");
     const radioTripType = document.getElementsByName("tripType");
     for (let i = 0; i < radioTripType.length; i++) {
         if (radioTripType[i].checked === true){
@@ -37,22 +37,22 @@ function activeRadioChoice(){
         }
     }
     if(userRadioChoice === 1){
-        mainImage.src = "images/filterform/mainimage/catsofa.jpeg";
+        mainImage.src = "images/matchform/mainimage/catsofa.jpeg";
     }else if(userRadioChoice === 2){
-        mainImage.src = "images/filterform/mainimage/naturelover.jpeg";
+        mainImage.src = "images/matchform/mainimage/naturelover.jpeg";
     }else if(userRadioChoice === 3){
-        mainImage.src = "images/filterform/mainimage/shoppinginstyle.jpeg";
+        mainImage.src = "images/matchform/mainimage/shoppinginstyle.jpeg";
     }else if(userRadioChoice === 4){
-        mainImage.src = "images/filterform/mainimage/eternallycurious.jpeg";
+        mainImage.src = "images/matchform/mainimage/eternallycurious.jpeg";
     }
     checkFormValidity()
 }
 function activeCheckboxChoices(){
     userCheckboxChoices = [];
-    const mainImagesSpecialAttractions = document.getElementsByClassName("filterMainImagesSpecialAttractions");
-    const mainImagesHistoricalSites = document.getElementsByClassName("filterMainImagesHistoricalSites");
-    const mainImagesMuseums = document.getElementsByClassName("filterMainImagesMuseums");
-    const mainImagesViewpoints = document.getElementsByClassName("filterMainImagesViewpoints");
+    const mainImagesSpecialAttractions = document.getElementsByClassName("matchMainImagesSpecialAttractions");
+    const mainImagesHistoricalSites = document.getElementsByClassName("matchMainImagesHistoricalSites");
+    const mainImagesMuseums = document.getElementsByClassName("matchMainImagesMuseums");
+    const mainImagesViewpoints = document.getElementsByClassName("matchMainImagesViewpoints");
     const checkboxMostInterested = document.getElementsByName("mostInterested");
         for (let i=0; i < checkboxMostInterested.length; i++){
             if (checkboxMostInterested[i].checked === true){
