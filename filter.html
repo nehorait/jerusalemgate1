@@ -86,10 +86,10 @@
             <br><br>
             <span id="filterRequiredField">זהו שדה חובה</span>
             <form id="filterForm">
-                <label for="firstName">
+                <label for="firstName" onfocusout="firstName()">
                     <span>כדי שנוכל להתאים עבורך את הטיול, כיצד תרצה שנקרא לך?</span>
                     <br><br>
-                    <input type="text" id="firstName" placeholder="הקלד/י את השם הפרטי או הכינוי" pattern="^[\u0590-\u05FF\s]+$" title="&#10;&#10;יש להזין שם פרטי או כינוי בעברית בלבד" required>
+                    <input type="text" id="firstName" placeholder="הקלד/י שם פרטי או כינוי" pattern="^[\u0590-\u05FF\s]+$" title="&#10;&#10;יש להזין שם פרטי או כינוי בעברית בלבד שגדול או שווה ל 2 תווים" required onabort="firstName()" >
                     </label>
                 <br><br>
                 <fieldset onclick="activeRadioChoice()">
@@ -123,9 +123,9 @@
                         <input type="checkbox" name="mostInterested" id="viewpoints" value="4 - תצפיות">תצפיות<br><br>
                     </label>
                 </fieldset>
-                <label for="launch" onclick="">
+                <label for="match" onclick="match()">
                     <br><br>
-                    <input type="button" id="launch" value="התאם לי טיול">
+                    <input type="button" id="match" value="התאם לי טיול" disabled>
                 </label>
             </form>
             <div id="filterResultContainer">
@@ -133,18 +133,18 @@
                     <img src="images/filterform/mainimage/none.jpeg" id="filterMainImage">
                 </div>
                 <div id="filterMainImagesContainer">
-                    <img src="images/filterform/mainimages/jerusalemzoo.jpg" class="filterMainImages">
-                    <img src="images/filterform/mainimages/cityofdavid.jpg" class="filterMainImages">
-                    <img src="images/filterform/mainimages/israelaquarium.jpg" class="filterMainImages">
-                    <img src="images/filterform/mainimages/jerusalemwineries.jpg" class="filterMainImages">
-                    <img src="images/filterform/mainimages/mitzpedavid.jpg" class="filterMainImages">
-                    <img src="images/filterform/mainimages/westrenwall.jpg" class="filterMainImages">
-                    <img src="images/filterform/mainimages/yadvashem.jpg" class="filterMainImages">
-                    <img src="images/filterform/mainimages/telsokha.jpg" class="filterMainImages">
-                    <img src="images/filterform/mainimages/mada.png" class="filterMainImages">
-                    <img src="images/filterform/mainimages/nli.jpg" class="filterMainImages">
-                    <img src="images/filterform/mainimages/mamilla.jpg" class="filterMainImages">
-                    <img src="images/filterform/mainimages/mahneyehuda.jpg" class="filterMainImages">
+                    <img src="images/filterform/mainimages/jerusalemzoo.jpg" class="filterMainImagesSpecialAttractions">
+                    <img src="images/filterform/mainimages/cityofdavid.jpg" class="filterMainImagesHistoricalSites">
+                    <img src="images/filterform/mainimages/israelaquarium.jpg" class="filterMainImagesSpecialAttractions">
+                    <img src="images/filterform/mainimages/jerusalemwineries.jpg" class="filterMainImagesSpecialAttractions">
+                    <img src="images/filterform/mainimages/mitzpedavid.jpg" class="filterMainImagesViewpoints">
+                    <img src="images/filterform/mainimages/westrenwall.jpg" class="filterMainImagesHistoricalSites">
+                    <img src="images/filterform/mainimages/yadvashem.jpg" class="filterMainImagesMuseums">
+                    <img src="images/filterform/mainimages/telsokha.jpg" class="filterMainImagesViewpoints">
+                    <img src="images/filterform/mainimages/mada.png" class="filterMainImagesMuseums">
+                    <img src="images/filterform/mainimages/nli.jpg" class="filterMainImagesHistoricalSites">
+                    <img src="images/filterform/mainimages/mamilla.jpg" class="filterMainImagesSpecialAttractions">
+                    <img src="images/filterform/mainimages/mahneyehuda.jpg" class="filterMainImagesSpecialAttractions">
                 </div>
             </div>
             <br><br><br><br><br>

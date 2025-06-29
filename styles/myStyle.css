@@ -562,10 +562,7 @@ body div main #filterForm  > label > span::before, legend::before{
     content: "* ";
     color: orangered;
 }
-body div main #filterForm > label > .notRequired::before{
-    content: "";
-    padding-right: 3.8%;
-}
+
 body div main #filterForm input[type=text], input[type=button]{
     height: 25px;
     border-inline-start: gray solid 3px;
@@ -582,16 +579,18 @@ body div main #filterForm input[type=text]:focus{
     border: 3px solid darkgoldenrod;
     outline: 1px solid darkgoldenrod;
 }
-body div main #filterForm #launch{
+body div main #filterForm #match:disabled{
     opacity: 50%;
     cursor: not-allowed;
 }
 
-body div main #filterForm #launch:focus{
+body div main #filterForm #match:focus{
     border: 3px solid dimgray;
     outline: 1px solid dimgray;
 }
-body div main #filterForm > label > #launch{
+body div main #filterForm > label > #match{
+    opacity: 100%;
+    cursor: pointer;
     font-size: 20px;
     color: dimgray;
     text-align: center;
@@ -600,16 +599,31 @@ body div main #filterForm > label > #launch{
     height: 60px;
     transition: font-size 0.2s ease-out, bold 0.2s ease-out;
 }
-body div main #filterForm > label > #launch:hover{
+body div main #filterForm > label > #match:hover{
     font-size: 22px;
     font-weight: bold;
     color: gray;
     transition: font-size 0.1s ease-in, bold 0.1s ease-out;
-    
-
 }
-body div main #filterForm > label > #launch:active{
+body div main #filterForm > label > #match:active{
     scale:0.94;
+}
+body div main #filterForm > label > #match:disabled{
+    opacity: 50%;
+    cursor: not-allowed;
+    font-size: 20px;
+    color: dimgray;
+    text-align: center;
+    direction: rtl;
+    width: 175px;
+    height: 60px;
+}
+body div main #filterForm > label > #match:disabled:hover{
+     font-size: 20px;
+     font-weight: normal;
+ }
+body div main #filterForm > label > #match:disabled:active{
+    scale:1;
 }
 body div main #filterResultContainer{
     position: absolute;
@@ -639,8 +653,10 @@ body div main #filterResultContainer > #filterMainImagesContainer{
     height: 34%;
     width: 100%;
     margin-bottom: 25px;
+    clear: both;
+
 }
-body div main #filterResultContainer > #filterMainImagesContainer > .filterMainImages{
+body div main #filterResultContainer > #filterMainImagesContainer > .filterMainImagesSpecialAttractions, .filterMainImagesHistoricalSites, .filterMainImagesMuseums, .filterMainImagesViewpoints{
     float: right;
     margin: 1px 1px 1px 1px;
     border: 2px double darkgoldenrod;
