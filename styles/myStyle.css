@@ -251,7 +251,7 @@ body div #sitemapMain div {
     position: relative;
     text-align: justify;
     right: 2%;
-    margin: 5% 0.5% 7% 0.5%;
+    margin: 6% 0.5% 8% 0.5%;
     vertical-align: top;
     display: inline-block;
     width: 12%;
@@ -675,7 +675,6 @@ body div footer{
     position: relative;
     text-align: center;
     background-color: silver;
-    padding-top: 1%;
     padding-bottom: 1%;
     font-family: "YehudaCLM", sans-serif;
 }
@@ -691,6 +690,7 @@ body div footer div p{
     position: relative;
     text-decoration: none;
     color: rebeccapurple;
+    margin-bottom: 15px;
     font-size: 20px;
     font-weight: normal;
 }
