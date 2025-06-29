@@ -86,13 +86,13 @@
             <br><br>
             <span id="filterRequiredField">זהו שדה חובה</span>
             <form id="filterForm">
-                <label for="firstName" onfocusout="firstName()">
+                <label for="firstName" oninput="firstName()">
                     <span>כדי שנוכל להתאים עבורך את הטיול, כיצד תרצה שנקרא לך?</span>
                     <br><br>
                     <input type="text" id="firstName" placeholder="הקלד/י שם פרטי או כינוי בעברית בלבד שגדול או שווה ל 2 תווים" pattern="^[\u0590-\u05FF\s]+$" title="&#10;&#10;יש להזין שם פרטי או כינוי בעברית בלבד שגדול או שווה ל 2 תווים" required onabort="firstName()" >
                     </label>
                 <br><br>
-                <fieldset onclick="activeRadioChoice()">
+                <fieldset oninput="activeRadioChoice()">
                     <legend title="בחר/י את סגנון החיים שלך">מהו סגנון החיים שלך?</legend><br>
                     <label for="catSofa">
                         <input type="radio" name="tripType" id="catSofa" value="1 - ספה ונטפליקס" required>ספה ונטפליקס<br><br>
@@ -108,7 +108,7 @@
                     </label>
                 </fieldset>
                 <br><br>
-                <fieldset onclick="activeCheckboxChoices()">
+                <fieldset oninput="activeCheckboxChoices()">
                     <legend title="בחר/י מה הכי מעניין אותך">מה הכי מעניין אותך?</legend><br>
                     <label for="specialAttractions">
                         <input type="checkbox" name="mostInterested" id="specialAttractions" value="1 - אטרקציות מיוחדות" >אטרקציות מיוחדות<br><br>
