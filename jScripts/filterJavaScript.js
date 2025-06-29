@@ -4,9 +4,6 @@ let userCheckboxChoices = 0;
 let isUserFirstNameValid = false;
 let isUserRadioChoiceValid = false;
 let isUserCheckBoxChoicesValid = false;
-function clearForm(){
-    
-}
 function clear(){
     userFirstName = "";
     userRadioChoice = 0;
@@ -14,6 +11,8 @@ function clear(){
     isUserFirstNameValid = false;
     isUserRadioChoiceValid = false;
     isUserCheckBoxChoicesValid = false;
+    document.getElementById("filterForm").reset();
+    document.getElementById("match").disabled = true;
 }
 //function match(){
     //    firstName();
