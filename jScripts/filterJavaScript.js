@@ -4,7 +4,7 @@ let userCheckboxChoices = 0;
 let isUserFirstNameValid = false;
 let isUserRadioChoiceValid = false;
 let isUserCheckBoxChoicesValid = false;
-function clear(){
+function clearAll(){
     userFirstName = "";
     userRadioChoice = 0;
     userCheckboxChoices = 0;
@@ -14,9 +14,6 @@ function clear(){
     document.getElementById("filterForm").reset();
     document.getElementById("match").disabled = true;
 }
-//function match(){
-    //    firstName();
-//}
  function firstName() {
     const hebrewRegex = /^[\u0590-\u05FF\s.,'"-]+$/;
     const textFirstName = document.getElementById("firstName").value.trim();
@@ -28,7 +25,6 @@ function clear(){
     }
      checkFormValidity()
 }
-
 function activeRadioChoice(){
     const mainImage = document.getElementById("filterMainImage");
     const radioTripType = document.getElementsByName("tripType");
@@ -115,5 +111,9 @@ function checkFormValidity(){
         buttonMatch.disabled  = true;
     }
 }
+function match(){
+    
+}
+
 
 

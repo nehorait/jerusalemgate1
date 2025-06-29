@@ -19,7 +19,7 @@
     <script src="jScripts/filterJavaScript.js" type="text/javascript"></script>
 
 </head>
-<body onload="clear()">
+<body onload="clearAll()">
     <div id="container">
         <header>
             <a id="bsd">בס"ד</a>
@@ -87,7 +87,7 @@
             <span id="filterRequiredField">זהו שדה חובה</span>
             <form id="filterForm">
                 <label for="firstName" oninput="firstName()">
-                    <span>כדי שנוכל להתאים עבורך את הטיול, כיצד תרצה שנקרא לך?</span>
+                    <span>כדי שנוכל להתאים עבורך את הטיול, כיצד נקרא לך?</span>
                     <br><br>
                     <input type="text" id="firstName" placeholder="הקלד/י שם פרטי או כינוי בעברית בלבד שגדול או שווה ל 2 תווים" pattern="^[\u0590-\u05FF\s]+$" title="&#10;&#10;יש להזין שם פרטי או כינוי בעברית בלבד שגדול או שווה ל 2 תווים" required onabort="firstName()" >
                     </label>
