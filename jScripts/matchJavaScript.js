@@ -38,12 +38,16 @@ function activeRadioChoice(){
     }
     if(userRadioChoice === 1){
         mainImage.src = "images/matchform/mainimage/catsofa.jpeg";
+        mainImage.alt = "חתול ישן על ספה"
     }else if(userRadioChoice === 2){
         mainImage.src = "images/matchform/mainimage/naturelover.jpeg";
+        mainImage.alt = "אדם מטייל בטבע"
     }else if(userRadioChoice === 3){
         mainImage.src = "images/matchform/mainimage/shoppinginstyle.jpeg";
+        mainImage.alt = "אשה מחזיקה שקיות של קניות"
     }else if(userRadioChoice === 4){
         mainImage.src = "images/matchform/mainimage/eternallycurious.jpeg";
+        mainImage.alt = "אדם מטייל במקום עתיק ומסתקרן"
     }
     checkFormValidity()
 }
