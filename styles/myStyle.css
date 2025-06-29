@@ -154,12 +154,13 @@ body div header nav ul li ul .nav2Titles:hover{
     outline: 4px solid whitesmoke;
 }
 body div header nav ol{
+    border: 2px solid black;
     list-style: none;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: right;
     position: relative;
-    right: 22%;
+    right: 24%;
     width: 40%;
 }
 body div header nav ol li{
