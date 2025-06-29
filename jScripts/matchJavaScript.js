@@ -44,7 +44,7 @@ function activeRadioChoice(){
         mainImage.alt = "אדם מטייל בטבע"
     }else if(userRadioChoice === 3){
         mainImage.src = "images/matchform/mainimage/shoppinginstyle.jpeg";
-        mainImage.alt = "אשה מחזיקה שקיות של קניות"
+        mainImage.alt = "אישה מחזיקה שקיות של קניות בקניון"
     }else if(userRadioChoice === 4){
         mainImage.src = "images/matchform/mainimage/eternallycurious.jpeg";
         mainImage.alt = "אדם מטייל במקום עתיק ומסתקרן"
