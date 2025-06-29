@@ -237,7 +237,7 @@ body div main h1{
 body div main h2{
     font-size: 30px;
     font-weight: bold;
-    color: gray;
+    color: darkgoldenrod;
     text-align: center;
 
 }
@@ -254,6 +254,33 @@ body div main ul li:before{
     content: "○ ";
     color: gray;
 }
+body div #indexMain{
+    text-align: center;
+    
+}
+body div #indexMain .indexCategories{
+    border: 4px black solid;
+    border-radius: 12px;
+    margin: 0.5% auto;
+    position: relative;
+    display: inline-block;
+    width: 66%;
+    text-align: right;
+    background-color: floralwhite;
+}
+body div #indexMain .indexCategories > h3{
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    right: 1.5%;
+    color: rebeccapurple;
+    width: auto;
+    margin-bottom: 0;
+}
+body div #indexMain .indexCategories > p{
+    padding: 10px;
+    margin: 0 20px 20px 20px;
+}
 body div #sitemapMain {
     position: relative;
     text-align: center;
@@ -261,11 +288,11 @@ body div #sitemapMain {
 body div #sitemapMain div {
     position: relative;
     text-align: justify;
-    right: 2%;
-    margin: 6% 0.5% 8% 0.5%;
+    right: 3%;
+    margin: 6% 0.5% 9% 0.5%;
     vertical-align: top;
     display: inline-block;
-    width: 12%;
+    width: 14%;
 }
 body div main div .smTitles{
     margin-bottom: 0;
@@ -276,9 +303,8 @@ body div main div .smTitles{
     color: black;
 }
 body div main div .sm1Titles, .sm2Titles{
-    width: fit-content;
-    margin-top:12%;
-    margin-bottom: 12%;
+    margin-top: 9%;
+    margin-bottom: 9%;
     text-decoration: none;
     display: block;
     color: darkgoldenrod;
@@ -435,7 +461,7 @@ body div main #contactUsForm > label > #launch:active{
 body div #aboutMain div{
     position: relative;
     display: block;
-    width: 34%;
+    width: auto;
     right: 23.6%;
     margin-bottom: 0;
 }
@@ -462,8 +488,8 @@ body div #aboutMain div article p{
 body div #aboutMain div article a{
     font-size: 18px;
     display: block;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 body div #aboutMain div article #rebeccapurpleStrong{
     color: rebeccapurple;
