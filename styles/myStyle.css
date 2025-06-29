@@ -37,9 +37,20 @@ body div #bsd{
     font-size: 14px;
     z-index: 5;
 }
-body div header #navLogo{
+body div header #navLogoIndex{
     position: fixed;
-    top: 103px;
+    top: 107px;
+    right: 2px;
+    color: black;
+    z-index: 4;
+    transition: 0.5s ease;
+    transform: scale(1.04);
+    filter: drop-shadow(0 0 1px black);
+}
+body div header #navLogo{
+    opacity: 0.9;
+    position: fixed;
+    top: 104px;
     right: 0;
     color: black;
     z-index: 4;
@@ -50,7 +61,7 @@ body div header #navLogo:hover{
     filter: brightness(106%) saturate(109%);
     transition:0.5s ease;
 }
-body div header #navLogo:active{
+body div header #navLogo:active, #navLogoIndex:active{
     scale: 0.96;
 }
 body div header nav {
@@ -154,7 +165,6 @@ body div header nav ul li ul .nav2Titles:hover{
     outline: 4px solid whitesmoke;
 }
 body div header nav ol{
-    border: 2px solid black;
     list-style: none;
     padding-top: 10px;
     padding-bottom: 10px;
