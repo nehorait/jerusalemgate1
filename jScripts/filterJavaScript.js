@@ -4,6 +4,9 @@ let userCheckboxChoices = 0;
 let isUserFirstNameValid = false;
 let isUserRadioChoiceValid = false;
 let isUserCheckBoxChoicesValid = false;
+function clearForm(){
+    
+}
 function clear(){
     userFirstName = "";
     userRadioChoice = 0;
@@ -34,6 +37,7 @@ function activeRadioChoice(){
         if (radioTripType[i].checked === true){
             userRadioChoice = i+1;
             isUserRadioChoiceValid = true;
+            mainImage.style.opacity = "100%";
             break;
         }
     }
@@ -46,7 +50,6 @@ function activeRadioChoice(){
     }else if(userRadioChoice === 4){
         mainImage.src = "images/filterform/mainimage/eternallycurious.jpeg";
     }
-    mainImage.style.opacity = "100%";
     checkFormValidity()
 }
 function activeCheckboxChoices(){
