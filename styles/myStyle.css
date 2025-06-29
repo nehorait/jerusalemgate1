@@ -47,7 +47,7 @@ body div header #navLogo{
 }
 body div header #navLogo:hover{
     transform: rotate(4deg);
-    match: brightness(106%) saturate(109%);
+    filter: brightness(106%) saturate(109%);
     transition:0.5s ease;
 }
 body div header #navLogo:active{
