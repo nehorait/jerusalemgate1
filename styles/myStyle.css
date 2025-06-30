@@ -249,8 +249,27 @@ body div main ul li:before{
     content: "○ ";
     color: gray;
 }
-body div #indexMain{
+body div main{
     text-align: center;
+}
+body div .headerPagesMain > .headerPagesArticle > div{
+    width: 66%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+body div .headerPagesMain > .headerPagesArticle > div > img{
+    outline : goldenrod solid;
+    margin-top: 22px;
+    float: left;
+    width: 42%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    border-radius: 30px;
+}
+body div .headerPagesMain > .headerPagesArticle > div > p{
+    font-size: 18px;
+    text-align: right;
 }
 body div #indexMain .indexCategories{
     border: 4px dimgray solid;
@@ -277,32 +296,32 @@ body div #indexMain .indexCategories > p{
     margin: 0 20px 20px 20px;
 }
 body div #indexMain > #indexFirstArticle > div{
-    width: 66%;
-    position: relative;
-    display: inline-block;
-    text-align: center;
+
 }
 body div #indexMain > #indexFirstArticle > div > img{
     outline : goldenrod solid;
     margin-top: 22px;
-    float: left;
     width: 42%;
     margin-right: 20%;
     margin-bottom: 10%;
     border-radius: 30px;
-    transition: transform 0.5s ease;
 }
-body div #indexMain #indexFirstArticle > div > p{
-    font-size: 18px;
-    text-align: right;
-}
-body div #israelMuseumImage:hover {
-    transform: scale(1.05);
+body div #indexMain > #indexFirstArticle > div > p{
+
 }
 body div #indexMain > section > h3, body div #indexMain > article > h3{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
+}
+body div #oldcityMain > #oldcityArticle > div{
+
+}
+body div #oldcityMain > #oldcityArticle > div > img{
+
+}
+body div #oldcityMain > #oldcityArticle > div > p{
+
 }
 body div #sitemapMain {
     position: relative;
