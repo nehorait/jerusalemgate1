@@ -253,7 +253,7 @@ body div #indexMain{
     text-align: center;
 }
 body div #indexMain .indexCategories{
-    border: 4px goldenrod solid;
+    border: 4px dimgray solid;
     border-radius: 12px;
     margin: 0.5% auto;
     position: relative;
