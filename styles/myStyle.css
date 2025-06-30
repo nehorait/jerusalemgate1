@@ -283,6 +283,8 @@ body div #indexMain > #indexFirstArticle > div{
     text-align: center;
 }
 body div #indexMain > #indexFirstArticle > div > img{
+    outline : goldenrod solid;
+    margin-top: 22px;
     float: left;
     width: 42%;
     margin-right: 20%;
@@ -293,9 +295,6 @@ body div #indexMain > #indexFirstArticle > div > img{
 body div #indexMain #indexFirstArticle > div > p{
     font-size: 18px;
     text-align: right;
-}
-body div #indexMain #indexFirstArticle > div > p:first-line{
-    margin-top: 0;
 }
 body div #israelMuseumImage:hover {
     transform: scale(1.05);
