@@ -211,17 +211,6 @@ body div #oldCityImage{
 body div #oldCityImage:hover {
     transform: scale(1.05);
 }
-body div #israelMuseumImage{
-    margin-top: 50%;
-    position: absolute;
-    left: 125%;
-    width: 50%;
-    border-radius: 30px;
-    transition: transform 0.5s ease;
-}
-body div #israelMuseumImage:hover {
-    transform: scale(1.05);
-}
 body div main{
     font-family: Tahoma, sans-serif;
     padding-top: 10px;
@@ -247,6 +236,12 @@ body div main h3{
     text-align: right;
     color: black;
 }
+body div main h4{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    color: rebeccapurple;
+}
 body div main ul li{
     list-style: none;
 }
@@ -256,7 +251,6 @@ body div main ul li:before{
 }
 body div #indexMain{
     text-align: center;
-    
 }
 body div #indexMain .indexCategories{
     border: 4px black solid;
@@ -268,18 +262,49 @@ body div #indexMain .indexCategories{
     text-align: right;
     background-color: floralwhite;
 }
-body div #indexMain .indexCategories > h3{
+
+body div #indexMain .indexCategories > h4{
+    font-size: 18px;
     padding: 10px;
     position: relative;
     display: inline-block;
     right: 1.5%;
-    color: rebeccapurple;
     width: auto;
     margin-bottom: 0;
 }
 body div #indexMain .indexCategories > p{
     padding: 10px;
     margin: 0 20px 20px 20px;
+}
+body div #indexMain > #indexFirstArticle > div{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
+body div #indexMain > #indexFirstArticle > div > img{
+    position: relative;
+    display: block;
+    float: left;
+    height: auto;
+    width: 44%;
+    margin-right: 10%;
+    border-radius: 30px;
+    transition: transform 0.5s ease;
+}
+body div #indexMain #indexFirstArticle > div > p{
+    font-size: 18px;
+    text-align: right;
+}
+body div #israelMuseumImage:hover {
+    transform: scale(1.05);
+}
+body div #indexMain > section > h3, body div #indexMain > article > h3{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 body div #sitemapMain {
     position: relative;
