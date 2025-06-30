@@ -249,7 +249,7 @@ body div main ul li:before{
     content: "○ ";
     color: gray;
 }
-body div main{
+body div .headerPagesMain {
     text-align: center;
 }
 body div .headerPagesMain > .headerPagesArticle > div{
@@ -329,7 +329,7 @@ body div #sitemapMain {
 }
 body div #sitemapMain div {
     position: relative;
-    text-align: justify;
+    text-align: right;
     right: 3%;
     margin: 6% 0.5% 9% 0.5%;
     vertical-align: top;
