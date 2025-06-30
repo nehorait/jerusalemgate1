@@ -253,14 +253,14 @@ body div #indexMain{
     text-align: center;
 }
 body div #indexMain .indexCategories{
-    border: 4px black solid;
+    border: 4px goldenrod solid;
     border-radius: 12px;
     margin: 0.5% auto;
     position: relative;
     display: inline-block;
     width: 66%;
     text-align: right;
-    background-color: floralwhite;
+    background-color: lightgray;
 }
 
 body div #indexMain .indexCategories > h4{
