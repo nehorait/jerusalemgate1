@@ -277,26 +277,25 @@ body div #indexMain .indexCategories > p{
     margin: 0 20px 20px 20px;
 }
 body div #indexMain > #indexFirstArticle > div{
-    width: 100%;
-    max-width: 1200px;
+    width: 66%;
     position: relative;
     display: inline-block;
     text-align: center;
-    margin: 0 auto;
 }
 body div #indexMain > #indexFirstArticle > div > img{
-    position: relative;
-    display: block;
     float: left;
-    height: auto;
-    width: 44%;
-    margin-right: 10%;
+    width: 42%;
+    margin-right: 20%;
+    margin-bottom: 10%;
     border-radius: 30px;
     transition: transform 0.5s ease;
 }
 body div #indexMain #indexFirstArticle > div > p{
     font-size: 18px;
     text-align: right;
+}
+body div #indexMain #indexFirstArticle > div > p:first-line{
+    margin-top: 0;
 }
 body div #israelMuseumImage:hover {
     transform: scale(1.05);
