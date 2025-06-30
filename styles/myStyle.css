@@ -234,13 +234,13 @@ body div main h3{
     font-size: 20px;
     font-weight: bold;
     text-align: right;
-    color: black;
+    color: rebeccapurple;
 }
 body div main h4{
     font-size: 18px;
     font-weight: bold;
     text-align: right;
-    color: rebeccapurple;
+    color: black;
 }
 body div main ul li{
     list-style: none;
