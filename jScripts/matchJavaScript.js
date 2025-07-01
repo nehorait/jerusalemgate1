@@ -31,7 +31,6 @@ function activeRadioChoice(){
         if (radioLifestyle[i].checked === true){
             userRadioChoice = i+1;
             isUserRadioChoiceValid = true;
-            mainImage.style.opacity = "100%";
             break;
         }
     }
@@ -44,6 +43,7 @@ function activeRadioChoice(){
     }else if(userRadioChoice === 4){
         mainImage.src = "images/matchform/mainimage/eternallycurious.jpeg"; mainImage.alt = "אדם מטייל במקום עתיק ומסתקרן"
     }
+    mainImage.style.opacity = "100%";
     checkFormValidity()
 }
 function activeCheckboxChoices(){
