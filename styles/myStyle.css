@@ -778,11 +778,15 @@ body div main #matchSummaryFormContainer > #formContent{
 body div main #matchSummaryFormContainer > #formContent > span{
     position: absolute;
     float: right;
-    top: 2%;
-    right: 1%;
-    font-size: 20px;
-    font-weight: bolder;
-    cursor: pointer;    
+    top: 3%;
+    right: 2%;
+    font-size: 24px;
+    font-weight: normal;
+    cursor: pointer;
+}
+body div main #matchSummaryFormContainer > #formContent > span:hover{
+    font-weight: bold;
+    color: dimgray;
 }
 body div main #matchSummaryFormContainer > #formContent > h2{
 
@@ -810,21 +814,35 @@ body div main #matchSummaryFormContainer > #formContent > #formButtons > label[f
     float: left;
 }
 body div main #matchSummaryFormContainer > #formContent > #formButtons > label > input{
-    height: 35px;
-    width: 110px;
+    height: 40px;
+    width: 120px;
     border-radius: 10px;
     color: whitesmoke;
     border: 3px solid black;
 }
 body div main #matchSummaryFormContainer > #formContent > #formButtons > label > input:focus{
-    border: 3px solid rebeccapurple;
-    outline: 2px solid rebeccapurple;
+    border: 3px solid goldenrod;
+    outline: 2px solid goldenrod;
+}
+body div main #matchSummaryFormContainer > #formContent > #formButtons > label > input:active{
+    scale: 0.96;
+    transition: scale 0.2s;
+}
+body div main #matchSummaryFormContainer > #formContent > #formButtons > label > input:hover{
+    color: white;
+    font-weight: bold;
 }
 body div main #matchSummaryFormContainer > #formContent > #formButtons > label[for="confirm"] > input[type=button]{
     background-color: green;
 }
+body div main #matchSummaryFormContainer > #formContent > #formButtons > label[for="confirm"] > input[type=button]:hover{
+    background-color: darkgreen;
+}
 body div main #matchSummaryFormContainer > #formContent > #formButtons > label[for="edit"] > input[type=button]{
     background-color: red;
+}
+body div main #matchSummaryFormContainer > #formContent > #formButtons > label[for="edit"] > input[type=button]:hover{
+    background-color: darkred;
 }
 body div footer{
     position: relative;
