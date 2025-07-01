@@ -11,8 +11,7 @@ function clearAll(){
     isUserFirstNameValid = false;
     isUserRadioChoiceValid = false;
     isUserCheckBoxChoicesValid = false;
-    document.getElementById("matchForm").reset();
-    document.getElementById("match").disabled = true;
+    document.getElementById("matchForm").reset(); document.getElementById("match").disabled = true;
 }
  function firstName() {
     const hebrewRegex = /^[\u0590-\u05FF\s.,'"-]+$/;
@@ -134,12 +133,8 @@ function showSummaryPopup() {
     document.getElementById("matchSummaryFormContainer").style.display = "flex";
 }
 function formSent(){
-    alert("הטופס נשלח בהצלחה!");
-    document.getElementById("matchSummaryFormContainer").style.display = "none";
-    clearAll()
+    alert("הטופס נשלח בהצלחה!"); document.getElementById("matchSummaryFormContainer").style.display = "none"; clearAll()
 }
 function exitPopup(){
     document.getElementById("matchSummaryFormContainer").style.display = "none";
 }
-
-
