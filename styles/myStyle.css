@@ -750,6 +750,82 @@ body div main #matchResultContainer > #matchMainImagesContainer > .matchMainImag
     opacity: 0.5;
     border-radius: 5px;
 }
+body div #matchSummaryFormContainer{
+    text-align: center;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+body div main #matchSummaryFormContainer > #formContent{
+    margin: auto;
+    background-color: lightgray;
+    padding: 30px;
+    border: 3px solid dimgray;
+    width: 33%;
+    border-radius: 20px;
+    position: relative;
+    text-align: right;
+}
+body div main #matchSummaryFormContainer > #formContent > span{
+    position: absolute;
+    float: right;
+    top: 2%;
+    right: 1%;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;    
+}
+body div main #matchSummaryFormContainer > #formContent > h2{
+
+}
+body div main #matchSummaryFormContainer > #formContent > #formDetails{
+    
+}
+body div main #matchSummaryFormContainer > #formContent > #formDetails > strong{
+    color: rebeccapurple;
+}
+body div main #matchSummaryFormContainer > #formContent > #formButtons{
+    text-align: center;
+    margin-top: 5%;
+}
+body div main #matchSummaryFormContainer > #formContent > #formButtons > label{
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+body div main #matchSummaryFormContainer > #formContent > #formButtons > label[for="confirm"]{
+    float:right;
+}
+body div main #matchSummaryFormContainer > #formContent > #formButtons > label[for="edit"]{
+    float: left;
+}
+body div main #matchSummaryFormContainer > #formContent > #formButtons > label > input{
+    height: 35px;
+    width: 110px;
+    border-radius: 10px;
+    color: whitesmoke;
+    border: 3px solid black;
+}
+body div main #matchSummaryFormContainer > #formContent > #formButtons > label > input:focus{
+    border: 3px solid rebeccapurple;
+    outline: 2px solid rebeccapurple;
+}
+body div main #matchSummaryFormContainer > #formContent > #formButtons > label[for="confirm"] > input[type=button]{
+    background-color: green;
+}
+body div main #matchSummaryFormContainer > #formContent > #formButtons > label[for="edit"] > input[type=button]{
+    background-color: red;
+}
 body div footer{
     position: relative;
     text-align: center;

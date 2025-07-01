@@ -82,6 +82,21 @@
             </nav>
         </header>
         <main>
+            <div id="matchSummaryFormContainer">
+                <div id="formContent">
+                    <span id="closeButton" onclick="exitPopup()">&times;</span>
+                    <h2>לסיכום</h2>
+                    <div id="formDetails"></div>
+                    <div id="formButtons">
+                        <label for="confirm" onclick="formSent()">
+                            <input type="button" id="confirm" value="נשמע אש!">
+                        </label>
+                        <label for="edit" onclick="exitPopup()">
+                            <input type="button" id="edit" value="רוצה לערוך">
+                        </label>
+                    </div>
+                </div>
+            </div>
             <h1 id="matchTitle">התאם לי טיול</h1>
             <br><br>
             <span id="matchRequiredField">זהו שדה חובה</span>
@@ -95,16 +110,16 @@
                 <fieldset oninput="activeRadioChoice()">
                     <legend title="בחר/י את סגנון החיים שלך">מהו סגנון החיים שלך?</legend><br>
                     <label for="catSofa">
-                        <input type="radio" name="tripType" id="catSofa" value="1 - ספה ונטפליקס" required>ספה ונטפליקס<br><br>
+                        <input type="radio" name="lifestyle" id="catSofa" value="1 - ספה ונטפליקס" required>ספה ונטפליקס<br><br>
                     </label>
                     <label for="natureLover">
-                        <input type="radio" name="tripType" id="natureLover" value="2 - חובב טבע">חובב טבע<br><br>
+                        <input type="radio" name="lifestyle" id="natureLover" value="2 - חובב טבע">חובב טבע<br><br>
                     </label>
                     <label for="shoppingInStyle">
-                        <input type="radio" name="tripType" id="shoppingInStyle" value="3 - קניות וסטייל">קניות וסטייל<br><br>
+                        <input type="radio" name="lifestyle" id="shoppingInStyle" value="3 - קניות וסטייל">קניות וסטייל<br><br>
                     </label>
                     <label for="eternallyCurious">
-                        <input type="radio" name="tripType" id="eternallyCurious" value="4 - סקרן נצחי">סקרן נצחי<br><br>
+                        <input type="radio" name="lifestyle" id="eternallyCurious" value="4 - סקרן נצחי">סקרן נצחי<br><br>
                     </label>
                 </fieldset>
                 <br><br>
@@ -123,14 +138,14 @@
                         <input type="checkbox" name="mostInterested" id="viewpoints" value="4 - תצפיות">תצפיות<br><br>
                     </label>
                 </fieldset>
-                <label for="match" onclick="match()">
+                <label for="match" onclick="showSummaryPopup()">
                     <br><br>
                     <input type="button" id="match" value="התאם לי טיול" disabled>
                 </label>
             </form>
             <div id="matchResultContainer">
                 <div id="matchMainImageContainer">
-                    <img src="images/matchform/mainimage/none.jpeg" id="matchMainImage" alt="">
+                    <img src="" id="matchMainImage" alt="">
                 </div>
                 <div id="matchMainImagesContainer">
                     <img src="images/matchform/mainimages/jerusalemzoo.jpg" class="matchMainImagesSpecialAttractions" alt="גן החיות התנכי">

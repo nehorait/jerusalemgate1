@@ -27,9 +27,9 @@ function clearAll(){
 }
 function activeRadioChoice(){
     const mainImage = document.getElementById("matchMainImage");
-    const radioTripType = document.getElementsByName("tripType");
-    for (let i = 0; i < radioTripType.length; i++) {
-        if (radioTripType[i].checked === true){
+    const radioLifestyle = document.getElementsByName("lifestyle");
+    for (let i = 0; i < radioLifestyle.length; i++) {
+        if (radioLifestyle[i].checked === true){
             userRadioChoice = i+1;
             isUserRadioChoiceValid = true;
             mainImage.style.opacity = "100%";
@@ -37,17 +37,13 @@ function activeRadioChoice(){
         }
     }
     if(userRadioChoice === 1){
-        mainImage.src = "images/matchform/mainimage/catsofa.jpeg";
-        mainImage.alt = "חתול ישן על ספה"
+        mainImage.src = "images/matchform/mainimage/catsofa.jpeg"; mainImage.alt = "חתול ישן על ספה"
     }else if(userRadioChoice === 2){
-        mainImage.src = "images/matchform/mainimage/naturelover.jpeg";
-        mainImage.alt = "אדם מטייל בטבע"
+        mainImage.src = "images/matchform/mainimage/naturelover.jpeg"; mainImage.alt = "אדם מטייל בטבע"
     }else if(userRadioChoice === 3){
-        mainImage.src = "images/matchform/mainimage/shoppinginstyle.jpeg";
-        mainImage.alt = "אישה מחזיקה שקיות של קניות בקניון"
+        mainImage.src = "images/matchform/mainimage/shoppinginstyle.jpeg";mainImage.alt = "אישה מחזיקה שקיות של קניות בקניון"
     }else if(userRadioChoice === 4){
-        mainImage.src = "images/matchform/mainimage/eternallycurious.jpeg";
-        mainImage.alt = "אדם מטייל במקום עתיק ומסתקרן"
+        mainImage.src = "images/matchform/mainimage/eternallycurious.jpeg"; mainImage.alt = "אדם מטייל במקום עתיק ומסתקרן"
     }
     checkFormValidity()
 }
@@ -106,18 +102,44 @@ function activeCheckboxChoices(){
         }
     checkFormValidity()
 }
-
 function checkFormValidity(){
-    const buttonMatch = document.getElementById("match");
     if (isUserFirstNameValid === true && isUserRadioChoiceValid === true && isUserCheckBoxChoicesValid === true ){
-        buttonMatch.disabled = false;
+        document.getElementById("match").disabled = false;
     }else{
-        buttonMatch.disabled  = true;
+        document.getElementById("match").disabled  = true;
     }
 }
-function match(){
-    
+function showSummaryPopup() {
+    let userLifestyle = "";
+    let userMostInterested = "";
+    if (userRadioChoice === 1) {
+        userLifestyle = "ספה ונטפליקס";
+    } else if (userRadioChoice === 2) {
+        userLifestyle = "חובב טבע";
+    } else if (userRadioChoice === 3) {
+        userLifestyle = " קניות וסטייל";
+    } else if (userRadioChoice === 4) {
+        userLifestyle = "סקרן נצחי";
+    }
+    if (userCheckboxChoices[0] === 1) {
+        userMostInterested += ", אטרקציות מיוחדות"
+    }if (userCheckboxChoices[1] === 2) {
+        userMostInterested += ", אתרים היסטוריים"
+    }if (userCheckboxChoices[2] === 3) {
+        userMostInterested += ", מוזיאונים"
+    }if (userCheckboxChoices[3] === 4) {
+        userMostInterested += ", תצפיות"
+    }
+    document.getElementById("formDetails").innerHTML = "<strong>שם / כינוי המטייל: </strong>" +  userFirstName + "<br><br>" + "<strong>סגנון החיים: </strong>" + userLifestyle + "<br><br>" + " <strong>הכי מעניין: </strong>" + userMostInterested.slice(2);
+    document.getElementById("matchSummaryFormContainer").style.display = "flex";
 }
-
+function formSent(){
+    alert("הטופס נשלח בהצלחה!");
+    document.getElementById("matchSummaryFormContainer").style.display = "none";
+    clearAll()
+}
+function exitPopup(){
+    document.getElementById("matchSummaryFormContainer").style.display = "none";
+}
 
 
