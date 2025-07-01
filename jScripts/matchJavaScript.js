@@ -133,7 +133,7 @@ function showSummaryPopup() {
     document.getElementById("matchSummaryFormContainer").style.display = "flex";
 }
 function formSent(){
-    alert("הטופס נשלח בהצלחה!"); document.getElementById("matchSummaryFormContainer").style.display = "none"; clearAll()
+    alert("גם לנו!"); document.getElementById("matchSummaryFormContainer").style.display = "none"; clearAll()
 }
 function exitPopup(){
     document.getElementById("matchSummaryFormContainer").style.display = "none";

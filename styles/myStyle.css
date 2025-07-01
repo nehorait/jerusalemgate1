@@ -650,7 +650,7 @@ body div main #matchForm input[type=text], input[type=button]{
     border-block-end: goldenrod solid 3px;
 }
 body div main #matchForm input[type=text]{
-    width: 350px;
+    width: 345px;
 }
 body div main #matchForm input[type=text]::placeholder{
     font-size: 12px;
