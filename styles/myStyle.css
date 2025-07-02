@@ -233,7 +233,7 @@ body div main h2{
 body div main h3{
     font-size: 20px;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
     color: rebeccapurple;
 }
 body div main h4{
@@ -259,69 +259,90 @@ body div .headerPagesMain > .headerPagesArticle > div{
     text-align: center;
 }
 body div .headerPagesMain > .headerPagesArticle > div > img{
-    outline : goldenrod solid;
+    outline: 5px goldenrod solid;
     margin-top: 22px;
     float: left;
-    width: 42%;
-    margin-right: 20%;
-    margin-bottom: 10%;
+    margin-right: 18%;
+    margin-bottom: 9%;
     border-radius: 30px;
+    scale: 1;
+    transition: scale 1s ease-in;
+}
+body div .headerPagesMain > .headerPagesArticle > div > img:hover{
+    scale: 1.2;
+    transition: scale 0.75s ease-out;
 }
 body div .headerPagesMain > .headerPagesArticle > div > p{
     font-size: 18px;
     text-align: right;
 }
+body div #indexMain h1{
+    color: darkgoldenrod;
+}
+body div #indexMain h2{
+    color: gray;
+}
+body div #indexMain h3{
+
+}
+body div #indexMain h4{
+}
 body div #indexMain .indexCategories{
     border: 4px dimgray solid;
     border-radius: 12px;
-    margin: 0.5% auto;
+    margin: 2% auto;
     position: relative;
-    display: inline-block;
     width: 66%;
     text-align: right;
     background-color: lightgray;
 }
-
 body div #indexMain .indexCategories > h4{
-    font-size: 18px;
-    padding: 10px;
-    position: relative;
-    display: inline-block;
-    right: 1.5%;
-    width: auto;
+    margin-right: 20px;
     margin-bottom: 0;
+    padding: 10px 10px 10px 0;
+    text-shadow: 0 0 12px whitesmoke, 0 0 12px whitesmoke,  0 0 12px whitesmoke;
 }
 body div #indexMain .indexCategories > p{
-    padding: 10px;
-    margin: 0 20px 20px 20px;
+    margin-right: 20px;
+    padding: 0 10px 10px 10px;
 }
 body div #indexMain > #indexFirstArticle > div{
 
 }
 body div #indexMain > #indexFirstArticle > div > img{
-    outline : goldenrod solid;
-    margin-top: 22px;
     width: 42%;
-    margin-right: 20%;
-    margin-bottom: 10%;
-    border-radius: 30px;
 }
 body div #indexMain > #indexFirstArticle > div > p{
 
 }
-body div #indexMain > section > h3, body div #indexMain > article > h3{
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
+body div #indexMain > #indexAside{
+    border-radius: 25px;
+    padding: 1% 2%;
+    text-align: right;
+    background: goldenrod;
+    border: 5px darkgoldenrod solid;
+    width: 34%;
+    display: inline-block;
+}
+body div #indexMain > #indexAside > h4{
+    text-shadow: 0 0 12px silver, 0 0 12px silver;
+}
+body div #oldcityMain h1{
+    color: darkgoldenrod;
 }
 body div #oldcityMain > #oldcityArticle > div{
 
 }
 body div #oldcityMain > #oldcityArticle > div > img{
-
+    width: 45%;
 }
 body div #oldcityMain > #oldcityArticle > div > p{
 
+}
+body div #israelmuseumMain > aside > a{
+    position: relative;
+    right: 20%;
+    color: darkgoldenrod;
 }
 body div #sitemapMain {
     position: relative;
@@ -330,8 +351,8 @@ body div #sitemapMain {
 body div #sitemapMain div {
     position: relative;
     text-align: right;
-    right: 3%;
-    margin: 6% 0.5% 9% 0.5%;
+    right: 1.8%;
+    margin: 6% 0 9% 0;
     vertical-align: top;
     display: inline-block;
     width: 14%;
@@ -341,10 +362,11 @@ body div main div .smTitles{
     height: 30px;
     display: block;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     color: black;
 }
 body div main div .sm1Titles, .sm2Titles{
+    font-size: 18px;
     margin-top: 9%;
     margin-bottom: 9%;
     text-decoration: none;
@@ -367,11 +389,6 @@ body div main div .sm1Titles:hover:before{
     color: mediumpurple;
 }
 body div main strong{
-    color: darkgoldenrod;
-}
-body div main aside #israelMuseumSite{
-    position: relative;
-    right: 55%;
     color: darkgoldenrod;
 }
 body div main #contactUsTitle{
