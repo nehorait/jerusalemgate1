@@ -200,17 +200,6 @@ body div header nav ol li:after{
 body div header nav ol li:last-child:after{
     content: "";
 }
-body div #oldCityImage{
-    margin-top: 10%;
-    position: absolute;
-    left: 125%;
-    width: 50%;
-    border-radius: 30px;
-    transition: transform 0.5s ease;
-}
-body div #oldCityImage:hover {
-    transform: scale(1.05);
-}
 body div main{
     font-family: Tahoma, sans-serif;
     padding-top: 10px;
@@ -289,22 +278,18 @@ body div #indexMain h4{
 }
 body div #indexMain .indexCategories{
     border: 4px dimgray solid;
-    border-radius: 12px;
+    border-radius: 15px;
     margin: 2% auto;
     position: relative;
-    width: 66%;
+    width: 50%;
     text-align: right;
     background-color: lightgray;
+    padding: 1% 2%;
 }
 body div #indexMain .indexCategories > h4{
-    margin-right: 20px;
-    margin-bottom: 0;
-    padding: 10px 10px 10px 0;
     text-shadow: 0 0 12px whitesmoke, 0 0 12px whitesmoke,  0 0 12px whitesmoke;
 }
 body div #indexMain .indexCategories > p{
-    margin-right: 20px;
-    padding: 0 10px 10px 10px;
 }
 body div #indexMain > #indexFirstArticle > div{
 
@@ -315,16 +300,16 @@ body div #indexMain > #indexFirstArticle > div > img{
 body div #indexMain > #indexFirstArticle > div > p{
 
 }
-body div #indexMain > #indexAside{
+body div #indexMain > #indexAsideSmallRectangle{
     border-radius: 25px;
     padding: 1% 2%;
     text-align: right;
     background: goldenrod;
     border: 5px darkgoldenrod solid;
-    width: 34%;
+    width: 25%;
     display: inline-block;
 }
-body div #indexMain > #indexAside > h4{
+body div #indexMain > #indexAsideSmallRectangle > h4{
     text-shadow: 0 0 12px silver, 0 0 12px silver;
 }
 body div #oldcityMain h1{
@@ -334,10 +319,41 @@ body div #oldcityMain > #oldcityArticle > div{
 
 }
 body div #oldcityMain > #oldcityArticle > div > img{
-    width: 45%;
+    width: 42%;
 }
 body div #oldcityMain > #oldcityArticle > div > p{
 
+}
+body div #oldcityMain > #oldcitySectionListEven{
+    
+}
+body div #oldcityMain > #oldcitySectionListEven > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body div #oldcityMain > #oldcitySectionListEven > div > ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px 100px;
+    padding: 0;
+    margin: 0;
+}
+body div #oldcityMain > #oldcitySectionListEven > div > ul > li{
+    background: mediumpurple;
+    border: 5px solid rebeccapurple;
+    text-align: right;
+    width: 200px;
+    height: 200px;
+    padding: 10%;
+}
+body div #oldcityMain > #oldcitySectionListEven > div > ul > li:before{
+    content: "";
+    margin-right: 1px;
+}
+body div #oldcityMain > #oldcitySectionListEven > div > ul > li > strong{
+    color: black;
 }
 body div #israelmuseumMain > aside > a{
     position: relative;
@@ -615,6 +631,7 @@ body div main #matchForm{
 body div main #matchRequiredField{
     position: relative;
     text-align: right;
+    color: black;
     top: 25px;
     right: 15%;
     font-size: 14px;
@@ -624,9 +641,27 @@ body div main #matchRequiredField::before{
     color: orangered;
 }
 body div main #matchForm > fieldset{
-    width: 66%;
+    position: relative;
+    width: 270px;
+    background-color: white;
+    border-inline-start: silver solid 3px;
+    border-inline-end: gray solid 3px;
+    border-block-start: goldenrod solid 3px;
+    border-block-end: darkgoldenrod solid 3px;
+    border-radius: 10px;
+ }
+body div main #matchForm > fieldset > legend{
+    position: absolute;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    bottom: 210px;
+    width: 240px;
+    height: auto;
+    text-align: right;
 }
 body div main #matchForm > fieldset > label > input[type="radio"]{
+    margin-top: 2%;
     margin-right: 2%;
     margin-left: 3%;
     accent-color: rebeccapurple;
@@ -639,6 +674,7 @@ body div main #matchForm > fieldset > label > input[type="radio"]:checked{
     transition: scale 0.2s linear, transform 0.2s linear;
 }
 body div main #matchForm > fieldset > label > input[type="checkbox"]{
+    margin-top: 2%;
     margin-right: 2%;
     margin-left: 3%;
     accent-color: rebeccapurple;
@@ -651,8 +687,11 @@ body div main #matchForm > fieldset > label > input[type="checkbox"]:checked{
     scale: 1.5;
     transition: scale 0.2s linear, transform 0.2s linear;
 }
-body div main #matchForm > label > span, legend{
+body div main #matchForm > label > span{
+    color: black;
+    position: relative;
     font-weight: bold;
+    font-size: 18px;
 }
 body div main #matchForm  > label > span::before, legend::before{
     content: "* ";
@@ -661,17 +700,19 @@ body div main #matchForm  > label > span::before, legend::before{
 
 body div main #matchForm input[type=text], input[type=button]{
     height: 25px;
-    border-inline-start: gray solid 3px;
-    border-inline-end: silver solid 3px;
-    border-block-start: darkgoldenrod solid 3px;
-    border-block-end: goldenrod solid 3px;
+    border-inline-start: silver solid 3px;
+    border-inline-end: gray solid 3px;
+    border-block-start: goldenrod solid 3px;
+    border-block-end: darkgoldenrod solid 3px;
+    border-radius: 5px;
 }
 body div main #matchForm input[type=text]{
     width: 345px;
+    margin-bottom: 20px;
 }
 body div main #matchForm input[type=text]::placeholder{
     font-size: 12px;
-    color: darkgoldenrod;
+    color: rebeccapurple;
 }
 body div main #matchForm input[type=text]:focus{
     color: black;
@@ -742,7 +783,7 @@ body div main #matchResultContainer > #matchMainImageContainer{
 }
 body div main #matchResultContainer > #matchMainImageContainer > #matchMainImage{
     border-radius: 15px;
-    border: 4px solid black;
+    border: 4px solid darkgoldenrod;
     display: block;
     width: 400px;
     opacity: 0;
@@ -761,7 +802,7 @@ body div main #matchResultContainer > #matchMainImagesContainer{
     margin-bottom: 10px;
 }
 body div main #matchResultContainer > #matchMainImagesContainer > .matchMainImagesSpecialAttractions, .matchMainImagesHistoricalSites, .matchMainImagesMuseums, .matchMainImagesViewpoints{
-    border: 1px solid black;
+    border: 1px solid gray;
     width: 24.5%;
     height: 31.9%;
     opacity: 0.5;
