@@ -405,13 +405,13 @@ body div #indexMain > #indexAsideSmallRectangle > h4{
 body div #oldcityMain h1{
     color: darkgoldenrod;
 }
-body div #oldcityMain > #oldcityArticle > div{
+body div #oldcityMain > #oldcityFirstArticle > div{
 
 }
-body div #oldcityMain > #oldcityArticle > div > img{
+body div #oldcityMain > #oldcityFirstArticle > div > img{
     width: 42%;
 }
-body div #oldcityMain > #oldcityArticle > div > p{
+body div #oldcityMain > #oldcityFirstArticle > div > p{
 
 }
 body div #oldcityMain > #oldcitySectionListEven{
@@ -444,6 +444,15 @@ body div #oldcityMain > #oldcitySectionListEven > div > ul > li:before{
 }
 body div #oldcityMain > #oldcitySectionListEven > div > ul > li > strong{
     color: black;
+}
+body div #israelmuseumMain > #israelmuseumFirstArticle > div{
+
+}
+body div #israelmuseumMain > #israelmuseumFirstArticle > div > img{
+    width: 42%;
+}
+body div #israelmuseumMain > #israelmuseumFirstArticle > div > p{
+
 }
 body div #israelmuseumMain > #israelmuseumAsideSmallRectangle > a{
     position: relative;
