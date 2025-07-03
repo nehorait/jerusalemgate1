@@ -248,7 +248,6 @@ body div .headerPagesMain > .headerPagesArticle > div{
     text-align: center;
 }
 body div .headerPagesMain > .headerPagesArticle > div > img{
-    outline: 5px goldenrod solid;
     margin-top: 22px;
     float: left;
     margin-right: 18%;
@@ -385,6 +384,7 @@ body div #indexMain > #indexFirstArticle > div{
 
 }
 body div #indexMain > #indexFirstArticle > div > img{
+    outline: 5px goldenrod solid;
     width: 42%;
 }
 body div #indexMain > #indexFirstArticle > div > p{
@@ -409,6 +409,7 @@ body div #oldcityMain > #oldcityFirstArticle > div{
 
 }
 body div #oldcityMain > #oldcityFirstArticle > div > img{
+    outline: 5px goldenrod solid;
     width: 42%;
 }
 body div #oldcityMain > #oldcityFirstArticle > div > p{
@@ -449,6 +450,7 @@ body div #israelmuseumMain > #israelmuseumFirstArticle > div{
 
 }
 body div #israelmuseumMain > #israelmuseumFirstArticle > div > img{
+    outline: 5px gray solid;
     width: 42%;
 }
 body div #israelmuseumMain > #israelmuseumFirstArticle > div > p{
