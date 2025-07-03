@@ -265,6 +265,95 @@ body div .headerPagesMain > .headerPagesArticle > div > p{
     font-size: 18px;
     text-align: right;
 }
+body div .headerPagesMain > .headerPagesSectionMediumRectangle > div{
+    border: 4px dimgray solid;
+    border-radius: 15px;
+    margin: 2% auto;
+    position: relative;
+    width: 50%;
+    text-align: right;
+    background-color: lightgray;
+    padding: 1% 2%;
+}
+body div .headerPagesMain > .headerPagesSectionMediumRectangle > div > h4{
+    text-shadow: 0 0 12px whitesmoke, 0 0 12px whitesmoke,  0 0 12px whitesmoke;
+}
+body div .headerPagesMain > .headerPagesSectionMediumRectangle > div > p{
+}
+body div .headerPagesMain > .headerPagesSectionListEven{
+
+}
+body div .headerPagesMain > .headerPagesSectionListEven > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body div .headerPagesMain > .headerPagesSectionListEven > div > ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px 100px;
+    padding: 0;
+    margin: 0;
+}
+body div .headerPagesMain > .headerPagesSectionListEven > div > ul > li{
+    background: mediumpurple;
+    border: 5px solid rebeccapurple;
+    text-align: right;
+    width: 200px;
+    height: 200px;
+    padding: 10%;
+}
+body div .headerPagesMain > .headerPagesSectionListEven > div > ul > li:before{
+    content: "";
+    margin-right: 1px;
+}
+body div .headerPagesMain > .headerPagesSectionListEven > div > ul > li > strong{
+    color: black;
+}
+body div .headerPagesMain > .headerPagesSectionListUneven{
+
+}
+body div .headerPagesMain > .headerPagesSectionListUneven > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body div .headerPagesMain > .headerPagesSectionListUneven > div > ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 20px 100px;
+    padding: 0;
+    margin: 0;
+}
+body div .headerPagesMain > .headerPagesSectionListUneven > div > ul > li{
+    background: mediumpurple;
+    border: 5px solid rebeccapurple;
+    text-align: right;
+    width: 200px;
+    height: 200px;
+    padding: 10%;
+}
+body div .headerPagesMain > .headerPagesSectionListUneven > div > ul > li:before{
+    content: "";
+    margin-right: 1px;
+}
+body div .headerPagesMain > .headerPagesSectionListUneven > div > ul > li > strong{
+    color: black;
+}
+body div .headerPagesMain > .headerPagesAsideSmallRectangle{
+    border-radius: 25px;
+    padding: 1% 2%;
+    text-align: right;
+    background: goldenrod;
+    border: 5px darkgoldenrod solid;
+    width: 25%;
+    display: inline-block;
+}
+body div .headerPagesMain > .headerPagesAsideSmallRectangle > h4{
+    text-shadow: 0 0 12px silver, 0 0 12px silver;
+}
 body div #indexMain h1{
     color: darkgoldenrod;
 }
@@ -276,7 +365,8 @@ body div #indexMain h3{
 }
 body div #indexMain h4{
 }
-body div #indexMain .indexCategories{
+
+body div #indexMain > #indexSectionMediumRectangle > div{
     border: 4px dimgray solid;
     border-radius: 15px;
     margin: 2% auto;
@@ -286,10 +376,10 @@ body div #indexMain .indexCategories{
     background-color: lightgray;
     padding: 1% 2%;
 }
-body div #indexMain .indexCategories > h4{
+body div #indexMain > #indexSectionMediumRectangle > div > h4{
     text-shadow: 0 0 12px whitesmoke, 0 0 12px whitesmoke,  0 0 12px whitesmoke;
 }
-body div #indexMain .indexCategories > p{
+body div #indexMain > #indexSectionMediumRectangle > div > p{
 }
 body div #indexMain > #indexFirstArticle > div{
 
@@ -355,10 +445,14 @@ body div #oldcityMain > #oldcitySectionListEven > div > ul > li:before{
 body div #oldcityMain > #oldcitySectionListEven > div > ul > li > strong{
     color: black;
 }
-body div #israelmuseumMain > aside > a{
+body div #israelmuseumMain > #israelmuseumAsideSmallRectangle > a{
     position: relative;
-    right: 20%;
-    color: darkgoldenrod;
+    display: block;
+    text-align: left;
+    color: dimgray;
+}
+body div #israelmuseumMain > #israelmuseumAsideSmallRectangle > a:visited{
+    color: rebeccapurple;
 }
 body div #sitemapMain {
     position: relative;
