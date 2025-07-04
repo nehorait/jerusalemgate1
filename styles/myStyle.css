@@ -278,10 +278,6 @@ body div .headerPagesMain > .headerPagesSectionMediumRectangle > div{
 body div .headerPagesMain > .headerPagesSectionMediumRectangle > div > h4{
     text-shadow: 0 0 12px whitesmoke, 0 0 12px whitesmoke,  0 0 12px whitesmoke;
 }
-body div .headerPagesMain > .headerPagesSectionMediumRectangle > div > p{
-}
-body div .headerPagesMain > .headerPagesSectionListEven{
-}
 body div .headerPagesMain > .headerPagesSectionListEven > div{
     display: flex;
     justify-content: center;
@@ -310,9 +306,6 @@ body div .headerPagesMain > .headerPagesSectionListEven > div > ul > li:before{
 body div .headerPagesMain > .headerPagesSectionListEven > div > ul > li > strong{
     color: black;
     text-shadow: 0 0 18px whitesmoke, 0 0 18px whitesmoke;
-}
-body div .headerPagesMain > .headerPagesSectionListUneven{
-
 }
 body div .headerPagesMain > .headerPagesSectionListUneven > div{
     display: flex;
@@ -362,35 +355,11 @@ body div #indexMain h1{
 body div #indexMain h2{
     color: gray;
 }
-body div #indexMain h3{
-
-}
-body div #indexMain h4{
-}
-
-body div #indexMain > #indexSectionMediumRectangle > div{
-}
-body div #indexMain > #indexSectionMediumRectangle > div > h4{
-}
-body div #indexMain > #indexSectionMediumRectangle > div > p{
-}
-body div #indexMain > #indexFirstArticle > div{
-
-}
 body div #indexMain > #indexFirstArticle > div > img{
     outline: 5px goldenrod solid;
 }
-body div #indexMain > #indexFirstArticle > div > p{
-
-}
-body div #indexMain > #indexSectionListUneven{
-}
 body div #indexMain > #indexSectionListUneven > h3{
     margin-bottom: 10px;
-}
-body div #indexMain > #indexSectionListUneven > div{
-}
-body div #indexMain > #indexSectionListUneven > div > ul{
 }
 body div #indexMain > #indexSectionListUneven > div > ul > li{
     background-color: whitesmoke;
@@ -408,13 +377,7 @@ body div #indexMain > #indexSectionListUneven > div > ul > li > img:hover{
     border-radius: 25%;
     scale: 1.25;
     transition: ease-in 1s scale, ease-in 1s border-radius;
-
 }
-body div #indexMain > #indexSectionListUneven > div > ul > li:before{
-}
-body div #indexMain > #indexSectionListUneven > div > ul > li > strong{
-}
-
 body div #indexMain > #indexSectionListUneven > a {
     top: 40px;
     font-weight: bold;
@@ -422,8 +385,6 @@ body div #indexMain > #indexSectionListUneven > a {
     position: relative;
     display: inline-block;
     width: 370px;
-}
-    body div #indexMain > #indexAsideSmallRectangle{
 }
 body div #indexMain > #indexAsideSmallRectangle > h4{
 }
@@ -436,42 +397,8 @@ body div #oldcityMain > #oldcityFirstArticle > div{
 body div #oldcityMain > #oldcityFirstArticle > div > img{
     outline: 5px goldenrod solid;
 }
-body div #oldcityMain > #oldcityFirstArticle > div > p{
-
-}
-body div #oldcityMain > #oldcitySectionListEven{
-    
-}
-body div #oldcityMain > #oldcitySectionListEven > div{
-
-}
-body div #oldcityMain > #oldcitySectionListEven > div > ul{
-}
-body div #oldcityMain > #oldcitySectionListEven > div > ul > li{
-}
-body div #oldcityMain > #oldcitySectionListEven > div > ul > li:before{
-}
-body div #oldcityMain > #oldcitySectionListEven > div > ul > li > strong{
-}
-body div #oldcityMain > #oldcityAsideSmallRectangle{
-}
-body div #oldcityMain > #oldcityAsideSmallRectangle > h4{
-}
-body div #oldcityMain > #oldcityAsideSmallRectangle > p{
-}
-body div #israelmuseumMain > #israelmuseumFirstArticle > div{
-}
 body div #israelmuseumMain > #israelmuseumFirstArticle > div > img{
     outline: 5px gray solid;
-}
-body div #israelmuseumMain > #israelmuseumFirstArticle > div > p{
-
-}
-body div #israelmuseumMain > #israelmuseumAsideSmallRectangle{
-}
-body div #israelmuseumMain > #israelmuseumAsideSmallRectangle > h4{
-}
-body div #israelmuseumMain > #israelmuseumAsideSmallRectangle > p{
 }
 body div #israelmuseumMain > #israelmuseumAsideSmallRectangle > a{
     position: relative;
@@ -819,7 +746,6 @@ body div main #matchForm  > label > span::before, legend::before{
     content: "* ";
     color: orangered;
 }
-
 body div main #matchForm input[type=text], input[type=button]{
     height: 25px;
     border-inline-start: silver solid 3px;
@@ -845,7 +771,6 @@ body div main #matchForm #match:disabled{
     opacity: 50%;
     cursor: not-allowed;
 }
-
 body div main #matchForm #match:focus{
     border: 3px solid dimgray;
     outline: 1px solid dimgray;
@@ -967,12 +892,6 @@ body div main #matchSummaryFormContainer > #formContent > span{
 body div main #matchSummaryFormContainer > #formContent > span:hover{
     font-weight: bold;
     color: dimgray;
-}
-body div main #matchSummaryFormContainer > #formContent > h2{
-
-}
-body div main #matchSummaryFormContainer > #formContent > #formDetails{
-    
 }
 body div main #matchSummaryFormContainer > #formContent > #formDetails > strong{
     color: rebeccapurple;
