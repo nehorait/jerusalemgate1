@@ -369,11 +369,8 @@ body div #indexMain h4{
 }
 
 body div #indexMain > #indexSectionMediumRectangle > div{
-    border: 4px rebeccapurple solid;
-    background-color: mediumpurple;
 }
 body div #indexMain > #indexSectionMediumRectangle > div > h4{
-    text-shadow: 0 0 18px whitesmoke, 0 0 18px whitesmoke;
 }
 body div #indexMain > #indexSectionMediumRectangle > div > p{
 }
@@ -393,8 +390,6 @@ body div #indexMain > #indexSectionListUneven > div{
 body div #indexMain > #indexSectionListUneven > div > ul{
 }
 body div #indexMain > #indexSectionListUneven > div > ul > li{
-    background: lightgray;
-    border: 5px solid dimgray;
 }
 body div #indexMain > #indexSectionListUneven > div > ul > li:before{
 }
