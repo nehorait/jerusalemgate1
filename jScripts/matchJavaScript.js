@@ -109,34 +109,34 @@ function checkFormValidity(){ // הפונקציה שבודקת האם הטופס
         document.getElementById("match").disabled  = true; // אם לא אז תכבה
     }
 }
-function showSummaryPopup() {
-    let userLifestyle = "";
-    let userMostInterested = "";
-    if (userRadioChoice === 1) {
-        userLifestyle = "ספה ונטפליקס";
-    } else if (userRadioChoice === 2) {
-        userLifestyle = "חובב טבע";
-    } else if (userRadioChoice === 3) {
-        userLifestyle = " קניות וסטייל";
-    } else if (userRadioChoice === 4) {
-        userLifestyle = "סקרן נצחי";
-    }
-    if (userCheckboxChoices[0] === 1) {
-        userMostInterested += ". <br><br><strong style='color: black;'>אטרקציות מיוחדות</strong> - גן החיות התנכי, אקווריום ישראל, יקבי ירושלים, ממילא"
-    }if (userCheckboxChoices[1] === 2) {
-        userMostInterested += ". <br><br><strong style='color: black;'>אתרים היסטוריים -</strong> עיר דוד, הכותל המערבי, הספרייה הלאומית"
-    }if (userCheckboxChoices[2] === 3) {
-        userMostInterested += ". <br><br><strong style='color: black;'>מוזיאונים -</strong> יד ושם, מוזיאון המדע"
-    }if (userCheckboxChoices[3] === 4) {
-        userMostInterested += ". <br><br><strong style='color: black;'>תצפיות -</strong> תצפית מגדל דוד, תצפית תל שוכה"
-    }
+function showSummaryPopup() { // הפונקציה שאחרית על סיכום הטופס. היא תגיע אחרי לחיצה על הכפתור.
+    let userLifestyle = ""; // מה בעצם סגנון החיים של המשתמש?
+    let userMostInterested = ""; // ומה לגבי מה שהכי מעניין אותו?
+    if (userRadioChoice === 1) { // בשביל המשתנה הראשון נבדוק באיזה כפתור רדיו הוא בחר? אם בחר בראשון
+        userLifestyle = "ספה ונטפליקס"; // נגדיר את המשתנה סגנון חיים לספה ונטפליקס
+    } else if (userRadioChoice === 2) { // אם בשני
+        userLifestyle = "חובב טבע"; // נגדיר
+    } else if (userRadioChoice === 3) { // אם בשלישי
+        userLifestyle = " קניות וסטייל"; // נגדיר
+    } else if (userRadioChoice === 4) { // אם ברביעי
+        userLifestyle = "סקרן נצחי"; // נגדיר
+    } // נעבור לכפתורי הצ'קבוקס
+    if (userCheckboxChoices[0] === 1) { // אם הכי מעניין אותו האטרקציות המיוחדות
+        userMostInterested += ". <br><br><strong style='color: black;'>אטרקציות מיוחדות</strong> - גן החיות התנכי, אקווריום ישראל, יקבי ירושלים, ממילא" // נוסיף למשתנה ששומר את מה שהכי מעניין את המידע הבא הכולל הגדרות עיצוב שונו
+    }if (userCheckboxChoices[1] === 2) { // אם הכי מעניין האופציה השנייה
+        userMostInterested += ". <br><br><strong style='color: black;'>אתרים היסטוריים -</strong> עיר דוד, הכותל המערבי, הספרייה הלאומית" // נוסיף
+    }if (userCheckboxChoices[2] === 3) { // האופציה השלישית
+        userMostInterested += ". <br><br><strong style='color: black;'>מוזיאונים -</strong> יד ושם, מוזיאון המדע" // נוסיף
+    }if (userCheckboxChoices[3] === 4) { // האופציה הרביעית
+        userMostInterested += ". <br><br><strong style='color: black;'>תצפיות -</strong> תצפית מגדל דוד, תצפית תל שוכה" // נוסיף
+    } // עכשיו נדפיס את הכל לתוך הסיכום המוסתר שלנו. נוסיף הגדרות עיצוב ונבטל את הנקודה שמגיעה בסוף כל אופציה שהיא בעצם מגיעה בהתחלה שלה
     document.getElementById("formDetails").innerHTML = "<strong>שם / כינוי המטייל: </strong>" +  userFirstName + "<br><br>" + "<strong>סגנון החיים: </strong>" + userLifestyle + "<br><br>" + " <strong>הכי מעניין: </strong>" + userMostInterested.slice(1);
-    document.getElementById("matchSummaryFormContainer").style.display = "flex";
+    document.getElementById("matchSummaryFormContainer").style.display = "flex"; // נבטל את ההסתרה של הסיכום שלנו
 }
-function formSent(){
-    document.getElementById("matchSummaryFormContainer").style.display = "none";
-    location.reload()
+function formSent(){ // פונקציה לכפתור נשמע אש!
+    document.getElementById("matchSummaryFormContainer").style.display = "none"; // הסיכום יוסתר
+    location.reload() // יבוצע רענון לדף שבעצם גם מפעיל את הפונקציה שמאפסת לנו את הטופס והלחצן ועכשיו המשתמש ירצה למלא שוב פעם ;)
 }
-function exitPopup(){
-    document.getElementById("matchSummaryFormContainer").style.display = "none";
+function exitPopup(){ // פונקציה לכפתור רוצה לערוך
+    document.getElementById("matchSummaryFormContainer").style.display = "none"; // הסיכום יוסתר
 }
