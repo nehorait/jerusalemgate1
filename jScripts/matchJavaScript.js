@@ -35,17 +35,17 @@ function activeRadioChoice(){ // קולטת את הבחירה בכפתורי ה�
             break; // תעצור כי אין בה כבר צורך
         }
     } // למשתמש אין אופציה לבטל את בחירתו ולכן אין צורך בבדיקת אי תקינות else
-    if(userRadioChoice === 1){
-        mainImage.src = "images/matchform/mainimage/catsofa.jpeg"; mainImage.alt = "חתול ישן על ספה"
+    if(userRadioChoice === 1){ // התמונה תשתנה לפי הבחירה בכפתורי הרדיו
+        mainImage.src = "images/matchform/mainimage/catsofa.jpeg"; mainImage.alt = "חתול ישן על ספה" // תמונה ראשונה
     }else if(userRadioChoice === 2){
-        mainImage.src = "images/matchform/mainimage/naturelover.jpeg"; mainImage.alt = "אדם מטייל בטבע"
+        mainImage.src = "images/matchform/mainimage/naturelover.jpeg"; mainImage.alt = "אדם מטייל בטבע" // תמונה שנייה
     }else if(userRadioChoice === 3){
-        mainImage.src = "images/matchform/mainimage/shoppinginstyle.jpeg";mainImage.alt = "אישה מחזיקה שקיות של קניות בקניון"
+        mainImage.src = "images/matchform/mainimage/shoppinginstyle.jpeg";mainImage.alt = "אישה מחזיקה שקיות של קניות בקניון" // תמונה שלישית
     }else if(userRadioChoice === 4){
-        mainImage.src = "images/matchform/mainimage/eternallycurious.jpeg"; mainImage.alt = "אדם מטייל במקום עתיק ומסתקרן"
+        mainImage.src = "images/matchform/mainimage/eternallycurious.jpeg"; mainImage.alt = "אדם מטייל במקום עתיק ומסתקרן" // תמונה רביעית
     }
-    mainImage.style.opacity = "100%";
-    checkFormValidity()
+    mainImage.style.opacity = "100%"; // שקיפות התמונה
+    checkFormValidity() //תקרא לפנוקציה שבודקת, האם הטופס תקין?
 }
 function activeCheckboxChoices(){
     userCheckboxChoices = [];
