@@ -109,7 +109,7 @@ function checkFormValidity(){ // הפונקציה שבודקת האם הטופס
         document.getElementById("match").disabled  = true; // אם לא אז תכבה
     }
 }
-function showSummaryPopup() { // הפונקציה שאחרית על סיכום הטופס. היא תגיע אחרי לחיצה על הכפתור.
+function showSummaryPopup() { // הפונקציה שאחראית על סיכום הטופס. היא תגיע אחרי לחיצה על הכפתור.
     let userLifestyle = ""; // מה בעצם סגנון החיים של המשתמש?
     let userMostInterested = ""; // ומה לגבי מה שהכי מעניין אותו?
     if (userRadioChoice === 1) { // בשביל המשתנה הראשון נבדוק באיזה כפתור רדיו הוא בחר? אם בחר בראשון
