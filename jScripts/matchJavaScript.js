@@ -1,39 +1,40 @@
-﻿let userFirstName = "";
-let userRadioChoice = 0;
-let userCheckboxChoices = 0;
-let isUserFirstNameValid = false;
-let isUserRadioChoiceValid = false;
-let isUserCheckBoxChoicesValid = false;
-function clearAll(){
+﻿let userFirstName = ""; // שם שהמשתמש הקליד
+let userRadioChoice = 0; // הבחירה שהמתמש בחר בכפתורי הרדיו
+let userCheckboxChoices = 0; // הסימונים שהמשתמש סימן בכפתורי הצ'קבוקס
+let isUserFirstNameValid = false; // האם המשתמש הזין שם תקין
+let isUserRadioChoiceValid = false; // האם המשתמש בחר בכפתור הרדיו
+let isUserCheckBoxChoicesValid = false; // האם משתמש סימן לפחות סימון אחד בכפתורי הצ'קבוקס
+function clearAll(){ // הפנוקציה מנקה את הבחירות הכתובות למעלה
     userFirstName = "";
     userRadioChoice = 0;
     userCheckboxChoices = 0;
     isUserFirstNameValid = false;
     isUserRadioChoiceValid = false;
     isUserCheckBoxChoicesValid = false;
-    document.getElementById("matchForm").reset(); document.getElementById("match").disabled = true;
+    document.getElementById("matchForm").reset(); // בנוסף הפונקציה תנקה את הטופס
+    document.getElementById("match").disabled = true; // וגם את הכפתור
 }
- function firstName() {
-    const hebrewRegex = /^[\u0590-\u05FF\s.,'"-]+$/;
-    const textFirstName = document.getElementById("firstName").value.trim();
-    if (textFirstName.length >= 2 && hebrewRegex.test(textFirstName)) {
-        userFirstName = textFirstName;
-        isUserFirstNameValid = true;
+ function firstName() { // הפונקציה קולטת את השם \ כינוי, מזהה שהוא תקין - בעברית ושווה או גדול ל 2 תווים
+    const hebrewRegex = /^[\u0590-\u05FF\s.,'"-]+$/; // תקינות עברית
+    const textFirstName = document.getElementById("firstName").value.trim(); // קליטת השם ללא רווחים מיותרים
+    if (textFirstName.length >= 2 && hebrewRegex.test(textFirstName)) { // אם תקין
+        userFirstName = textFirstName; // תשמור במשתנה הגלובלי
+        isUserFirstNameValid = true; // תדווח שתקין 
     }else{
-        isUserFirstNameValid = false;
+        isUserFirstNameValid = false; // ואם לא תדווח שלא תקין
     }
-     checkFormValidity()
+     checkFormValidity() //תקרא לפנוקציה שבודקת, האם הטופס תקין?
 }
-function activeRadioChoice(){
-    const mainImage = document.getElementById("matchMainImage");
-    const radioLifestyle = document.getElementsByName("lifestyle");
-    for (let i = 0; i < radioLifestyle.length; i++) {
-        if (radioLifestyle[i].checked === true){
-            userRadioChoice = i+1;
-            isUserRadioChoiceValid = true;
-            break;
+function activeRadioChoice(){ // קולטת את הבחירה בכפתורי הרדיו
+    const mainImage = document.getElementById("matchMainImage"); // התמונה המתחלפת
+    const radioLifestyle = document.getElementsByName("lifestyle"); // כפתורי הרדיו
+    for (let i = 0; i < radioLifestyle.length; i++) { // לולאה שבודקת את כל הכפתורים
+        if (radioLifestyle[i].checked === true){ // האם מסומן?
+            userRadioChoice = i+1; // תשמור את המספר שמסומן במשתנה הגלובלי
+            isUserRadioChoiceValid = true; // תדווח שתקין
+            break; // תעצור כי אין בה כבר צורך
         }
-    }
+    } // למשתמש אין אופציה לבטל את בחירתו ולכן אין צורך בבדיקת אי תקינות else
     if(userRadioChoice === 1){
         mainImage.src = "images/matchform/mainimage/catsofa.jpeg"; mainImage.alt = "חתול ישן על ספה"
     }else if(userRadioChoice === 2){
@@ -121,19 +122,20 @@ function showSummaryPopup() {
         userLifestyle = "סקרן נצחי";
     }
     if (userCheckboxChoices[0] === 1) {
-        userMostInterested += ", אטרקציות מיוחדות"
+        userMostInterested += ". <br><br><strong style='color: black;'>אטרקציות מיוחדות</strong> - גן החיות התנכי, אקווריום ישראל, יקבי ירושלים, ממילא"
     }if (userCheckboxChoices[1] === 2) {
-        userMostInterested += ", אתרים היסטוריים"
+        userMostInterested += ". <br><br><strong style='color: black;'>אתרים היסטוריים -</strong> עיר דוד, הכותל המערבי, הספרייה הלאומית"
     }if (userCheckboxChoices[2] === 3) {
-        userMostInterested += ", מוזיאונים"
+        userMostInterested += ". <br><br><strong style='color: black;'>מוזיאונים -</strong> יד ושם, מוזיאון המדע"
     }if (userCheckboxChoices[3] === 4) {
-        userMostInterested += ", תצפיות"
+        userMostInterested += ". <br><br><strong style='color: black;'>תצפיות -</strong> תצפית מגדל דוד, תצפית תל שוכה"
     }
-    document.getElementById("formDetails").innerHTML = "<strong>שם / כינוי המטייל: </strong>" +  userFirstName + "<br><br>" + "<strong>סגנון החיים: </strong>" + userLifestyle + "<br><br>" + " <strong>הכי מעניין: </strong>" + userMostInterested.slice(2);
+    document.getElementById("formDetails").innerHTML = "<strong>שם / כינוי המטייל: </strong>" +  userFirstName + "<br><br>" + "<strong>סגנון החיים: </strong>" + userLifestyle + "<br><br>" + " <strong>הכי מעניין: </strong>" + userMostInterested.slice(1);
     document.getElementById("matchSummaryFormContainer").style.display = "flex";
 }
 function formSent(){
-    document.getElementById("matchSummaryFormContainer").style.display = "none"; clearAll()
+    document.getElementById("matchSummaryFormContainer").style.display = "none";
+    location.reload()
 }
 function exitPopup(){
     document.getElementById("matchSummaryFormContainer").style.display = "none";

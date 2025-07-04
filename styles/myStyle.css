@@ -856,6 +856,7 @@ body div main #matchResultContainer > #matchMainImagesContainer > .matchMainImag
     border-radius: 5px;
 }
 body div #matchSummaryFormContainer{
+    overflow: scroll;
     text-align: center;
     position: fixed;
     display: none;
@@ -973,6 +974,9 @@ body div footer div a{
     color: black;
     font-size: 18px;
     margin-top: 10px;
+}
+body div footer div .footer2Titles{
+    
 }
 body div footer div .footer1Titles:hover{
     color: dimgray;
