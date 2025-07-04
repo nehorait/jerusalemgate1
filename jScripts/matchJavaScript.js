@@ -122,7 +122,7 @@ function showSummaryPopup() { // הפונקציה שאחרית על סיכום �
         userLifestyle = "סקרן נצחי"; // נגדיר
     } // נעבור לכפתורי הצ'קבוקס
     if (userCheckboxChoices[0] === 1) { // אם הכי מעניין אותו האטרקציות המיוחדות
-        userMostInterested += ". <br><br><strong style='color: black;'>אטרקציות מיוחדות</strong> - גן החיות התנכי, אקווריום ישראל, יקבי ירושלים, ממילא" // נוסיף למשתנה ששומר את מה שהכי מעניין את המידע הבא הכולל הגדרות עיצוב שונו
+        userMostInterested += ". <br><br><strong style='color: black;'>אטרקציות מיוחדות -</strong> גן החיות התנכי, אקווריום ישראל, יקבי ירושלים, ממילא" // נוסיף למשתנה ששומר את מה שהכי מעניין את המידע הבא הכולל הגדרות עיצוב שונו
     }if (userCheckboxChoices[1] === 2) { // אם הכי מעניין האופציה השנייה
         userMostInterested += ". <br><br><strong style='color: black;'>אתרים היסטוריים -</strong> עיר דוד, הכותל המערבי, הספרייה הלאומית" // נוסיף
     }if (userCheckboxChoices[2] === 3) { // האופציה השלישית
