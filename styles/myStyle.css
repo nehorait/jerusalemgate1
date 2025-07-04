@@ -301,7 +301,7 @@ body div .headerPagesMain > .headerPagesSectionListEven > div > ul > li{
     text-align: right;
     width: 200px;
     height: 200px;
-    padding: 10%;
+    padding: 40px;
 }
 body div .headerPagesMain > .headerPagesSectionListEven > div > ul > li:before{
     content: "";
@@ -333,7 +333,7 @@ body div .headerPagesMain > .headerPagesSectionListUneven > div > ul > li{
     text-align: right;
     width: 200px;
     height: 200px;
-    padding: 10%;
+    padding: 40px;
 }
 body div .headerPagesMain > .headerPagesSectionListUneven > div > ul > li:before{
     content: "";
@@ -385,17 +385,45 @@ body div #indexMain > #indexFirstArticle > div > p{
 }
 body div #indexMain > #indexSectionListUneven{
 }
+body div #indexMain > #indexSectionListUneven > h3{
+    margin-bottom: 10px;
+}
 body div #indexMain > #indexSectionListUneven > div{
 }
 body div #indexMain > #indexSectionListUneven > div > ul{
 }
 body div #indexMain > #indexSectionListUneven > div > ul > li{
+    background-color: whitesmoke;
+    border: none;
+}
+body div #indexMain > #indexSectionListUneven > div > ul > li:before{
+}
+body div #indexMain > #indexSectionListUneven > div > ul > li > img{
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid rebeccapurple;
+    transition: ease-out 1s scale, ease-out 1s border-radius;
+}
+body div #indexMain > #indexSectionListUneven > div > ul > li > img:hover{
+    border-radius: 25%;
+    scale: 1.25;
+    transition: ease-in 1s scale, ease-in 1s border-radius;
+
 }
 body div #indexMain > #indexSectionListUneven > div > ul > li:before{
 }
 body div #indexMain > #indexSectionListUneven > div > ul > li > strong{
 }
-body div #indexMain > #indexAsideSmallRectangle{
+
+body div #indexMain > #indexSectionListUneven > a {
+    top: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    width: 370px;
+}
+    body div #indexMain > #indexAsideSmallRectangle{
 }
 body div #indexMain > #indexAsideSmallRectangle > h4{
 }
