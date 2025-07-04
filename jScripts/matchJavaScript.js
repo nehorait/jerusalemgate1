@@ -48,65 +48,65 @@ function activeRadioChoice(){ // קולטת את הבחירה בכפתורי ה�
     checkFormValidity() //תקרא לפנוקציה שבודקת, האם הטופס תקין?
 }
 function activeCheckboxChoices(){
-    userCheckboxChoices = [];
-    const mainImagesSpecialAttractions = document.getElementsByClassName("matchMainImagesSpecialAttractions");
-    const mainImagesHistoricalSites = document.getElementsByClassName("matchMainImagesHistoricalSites");
+    userCheckboxChoices = []; // הגדרת המשתנה הגלובלי כמערך
+    const mainImagesSpecialAttractions = document.getElementsByClassName("matchMainImagesSpecialAttractions"); // קליטת כל התמונות בעלי אותה קבוצה
+    const mainImagesHistoricalSites = document.getElementsByClassName("matchMainImagesHistoricalSites"); 
     const mainImagesMuseums = document.getElementsByClassName("matchMainImagesMuseums");
-    const mainImagesViewpoints = document.getElementsByClassName("matchMainImagesViewpoints");
-    const checkboxMostInterested = document.getElementsByName("mostInterested");
-        for (let i=0; i < checkboxMostInterested.length; i++){
-            if (checkboxMostInterested[i].checked === true){
-                userCheckboxChoices[i]= i+1;
+    const mainImagesViewpoints = document.getElementsByClassName("matchMainImagesViewpoints"); // סה"כ 4 קבוצות שונות
+    const checkboxMostInterested = document.getElementsByName("mostInterested"); // קליטת הכפתורים
+        for (let i=0; i < checkboxMostInterested.length; i++){ // מה בעצם מסומן? נבדוק על ידי לולאה
+            if (checkboxMostInterested[i].checked === true){ // האם מסומן?
+                userCheckboxChoices[i]= i+1; // אם כן תכניס למערך לפי המיקום 
             }
-        }
-    if (userCheckboxChoices[0] === 1){
-        for (let i=0; i < mainImagesSpecialAttractions.length; i++){
-            mainImagesSpecialAttractions[i].style.opacity = "100%";
+        } // יש כאן צורך לבדוק את כל הכפתורים בו זמנית. בוודאות אנחנו הולכים לבדוק את כל הכפתורים ולכן נבדוק את כולם.
+    if (userCheckboxChoices[0] === 1){ // האם המיקום הראשון מסומן?
+        for (let i=0; i < mainImagesSpecialAttractions.length; i++){ // תעבור על כל הקבוצה על ידי לולאה
+            mainImagesSpecialAttractions[i].style.opacity = "100%"; // תשנה לכל אחד את השקיפות ל 100% 
         }
         }else{
         for (let i=0; i < mainImagesSpecialAttractions.length; i++){
-            mainImagesSpecialAttractions[i].style.opacity = "50%";
+            mainImagesSpecialAttractions[i].style.opacity = "50%"; // אם לא תשנה ל 50%
         }
     }
-        if (userCheckboxChoices[1] === 2){
-            for (let i=0; i < mainImagesHistoricalSites.length; i++){
-                mainImagesHistoricalSites[i].style.opacity = "100%";
+        if (userCheckboxChoices[1] === 2){ // האם המיקום השני מסומן?
+            for (let i=0; i < mainImagesHistoricalSites.length; i++){ // תעבור על כל הקבוצה על ידי לולאה
+                mainImagesHistoricalSites[i].style.opacity = "100%"; // תשנה לכל אחד את השקיפות ל 100% 
             }
         }else{
-            for (let i=0; i < mainImagesHistoricalSites.length; i++){
-                mainImagesHistoricalSites[i].style.opacity = "50%";
+            for (let i=0; i < mainImagesHistoricalSites.length; i++){ 
+                mainImagesHistoricalSites[i].style.opacity = "50%"; // אם לא תשנה ל 50%
             }
         }
-        if (userCheckboxChoices[2] === 3){
-            for (let i=0; i < mainImagesMuseums.length; i++){
-                mainImagesMuseums[i].style.opacity = "100%";
+        if (userCheckboxChoices[2] === 3){ // האם המיקום השלישי מסומן?
+            for (let i=0; i < mainImagesMuseums.length; i++){ // תעבור על כל הקבוצה על ידי לולאה
+                mainImagesMuseums[i].style.opacity = "100%"; // תשנה לכל אחד את השקיפות ל 100% 
             }
         }else{
-            for (let i=0; i < mainImagesMuseums.length; i++){
-                mainImagesMuseums[i].style.opacity = "50%";
+            for (let i=0; i < mainImagesMuseums.length; i++){ 
+                mainImagesMuseums[i].style.opacity = "50%"; // אם לא תשנה ל 50%
             }
         }
-        if (userCheckboxChoices[3] === 4){
-            for (let i=0; i < mainImagesViewpoints.length; i++){
-                mainImagesViewpoints[i].style.opacity = "100%";
+        if (userCheckboxChoices[3] === 4){ // האם המיקום הרביעי מסומן?
+            for (let i=0; i < mainImagesViewpoints.length; i++){ // תעבור על כל הקבוצה על ידי לולאה
+                mainImagesViewpoints[i].style.opacity = "100%"; // תשנה לכל אחד את השקיפות ל 100% 
             }
         }else{
-            for (let i=0; i < mainImagesViewpoints.length; i++){
-                mainImagesViewpoints[i].style.opacity = "50%";
+            for (let i=0; i < mainImagesViewpoints.length; i++){ 
+                mainImagesViewpoints[i].style.opacity = "50%"; // אם לא תשנה ל 50%
             } 
         }    
-        if (userCheckboxChoices[0] === 1 || userCheckboxChoices[1] === 2 || userCheckboxChoices[2] === 3 || userCheckboxChoices[3] === 4){
-            isUserCheckBoxChoicesValid = true;
+        if (userCheckboxChoices[0] === 1 || userCheckboxChoices[1] === 2 || userCheckboxChoices[2] === 3 || userCheckboxChoices[3] === 4){ // האם אחד מהכפתורים מסומן?
+            isUserCheckBoxChoicesValid = true; // דווח שתקין
         }else{
-            isUserCheckBoxChoicesValid = false;
+            isUserCheckBoxChoicesValid = false; // דווח שלא תקין
         }
-    checkFormValidity()
+    checkFormValidity() // //תקרא לפנוקציה שבודקת, האם הטופס תקין?
 }
-function checkFormValidity(){
-    if (isUserFirstNameValid === true && isUserRadioChoiceValid === true && isUserCheckBoxChoicesValid === true ){
-        document.getElementById("match").disabled = false;
+function checkFormValidity(){ // הפונקציה שבודקת האם הטופס תקין? האם הכל הוזן כפי שצריך?
+    if (isUserFirstNameValid === true && isUserRadioChoiceValid === true && isUserCheckBoxChoicesValid === true ){ // אם הכל הוזן כפי שצריך
+        document.getElementById("match").disabled = false; // תפעיל את הכפתור
     }else{
-        document.getElementById("match").disabled  = true;
+        document.getElementById("match").disabled  = true; // אם לא אז תכבה
     }
 }
 function showSummaryPopup() {
