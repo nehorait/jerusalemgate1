@@ -475,9 +475,7 @@ body div main #contactUsRequiredField::before{
     content: "* ";
     color: orangered;
 }
-body div #contactUsMain {
-}
-body div #contactUsMain img {
+body div #contactUsMain > img{
     position: relative;
     top: 45px;
     float:left;
@@ -485,14 +483,17 @@ body div #contactUsMain img {
     border-radius: 25px;
     left: 16%;
     border: palegoldenrod solid 4px;
+    z-index: 2
 }
 body div main #contactUsForm{
+    border: 1px solid black;
     position: relative;
     display: block;
     text-align: right;
     top: 50px;
     right: 23.5%;
-    width: 51.5%;
+    width: 39.5%;
+    z-index: 5
 }
 body div main #contactUsForm > label > span{
         font-weight: bold;
