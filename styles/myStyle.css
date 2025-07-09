@@ -69,7 +69,8 @@ body div header nav {
 }
 
 body div header #secondNav {
-    background-color: silver;
+    outline: 2px solid gray;
+    background-color: palegoldenrod;
 }
 body div header nav ul {
     margin: 0;
@@ -292,8 +293,9 @@ body div .headerPagesMain > .headerPagesSectionListEven > div > ul{
     margin: 0;
 }
 body div .headerPagesMain > .headerPagesSectionListEven > div > ul > li{
-    background: mediumpurple;
-    border: 5px solid rebeccapurple;
+    background: lightgoldenrodyellow;
+    border: 5px solid palegoldenrod;
+    border-radius: 5px;
     text-align: right;
     width: 200px;
     height: 200px;
@@ -413,6 +415,9 @@ body div #sitemapMain {
     position: relative;
     text-align: center;
 }
+body div #sitemapMain > h1 {
+    color: black;
+}
 body div #sitemapMain div {
     position: relative;
     text-align: right;
@@ -469,6 +474,17 @@ body div main #contactUsRequiredField{
 body div main #contactUsRequiredField::before{
     content: "* ";
     color: orangered;
+}
+body div #contactUsMain {
+}
+body div #contactUsMain img {
+    position: relative;
+    top: 45px;
+    float:left;
+    width: 400px;
+    border-radius: 25px;
+    left: 16%;
+    border: palegoldenrod solid 4px;
 }
 body div main #contactUsForm{
     position: relative;
@@ -585,9 +601,18 @@ body div main #contactUsForm > label > #launch:active{
 body div #aboutMain div{
     position: relative;
     display: block;
-    width: auto;
+    width: 57%;
     right: 23.6%;
     margin-bottom: 0;
+}
+body div #aboutMain div article{
+    background-color: lightgoldenrodyellow;
+    padding: 10px 20px;
+    margin: 0 auto;
+    display: inline-block;
+    border: 3px solid black;
+    line-height: 1.45;
+    border-radius: 10px;
 }
 body div #aboutTitle{
         color: black;
@@ -612,8 +637,8 @@ body div #aboutMain div article p{
 body div #aboutMain div article a{
     font-size: 18px;
     display: block;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 1.1%;
+    margin-bottom: 1.1%;
 }
 body div #aboutMain div article #rebeccapurpleStrong{
     color: rebeccapurple;
@@ -947,7 +972,8 @@ body div main #matchSummaryFormContainer > #formContent > #formButtons > label[f
 body div footer{
     position: relative;
     text-align: center;
-    background-color: silver;
+    outline: 3px solid silver;
+    background-color: lightgoldenrodyellow;
     padding-bottom: 1%;
     font-family: "YehudaCLM", sans-serif;
 }
