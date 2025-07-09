@@ -486,7 +486,6 @@ body div #contactUsMain > img{
     z-index: 2
 }
 body div main #contactUsForm{
-    border: 1px solid black;
     position: relative;
     display: block;
     text-align: right;
